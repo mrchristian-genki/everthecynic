@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ryan Kelly · Writer &amp; Editor</title>
+<meta name="description" content="Ryan Kelly is a writer and editor in Cork. Fourteen years at GOAL, from Chief Editor of Goal Ireland to Senior Content Editor, with freelance bylines in the Irish Times, Irish Independent and Irish Examiner.">
+<!-- Testing: keep search engines out until the family signs off. Delete this line at launch. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#272B1F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.everthecynic.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.everthecynic.com/">
+<meta property="og:title" content="Ryan Kelly · Writer &amp; Editor">
+<meta property="og:description" content="Ryan Kelly is a writer and editor in Cork. Fourteen years at GOAL, from Chief Editor of Goal Ireland to Senior Content Editor, with freelance bylines in the Irish Times, Irish Independent and Irish Examiner.">
+<meta property="og:image" content="https://www.everthecynic.com/img/scene7-glen.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F4F2EC;
+  --ground-2:#EAE6DA;
+  --ink:#1C1C18;
+  --ink-soft:#5A5A4E;
+  --line:#D6D1C3;
+  --accent:#5E6B34;
+  --accent-ink:#FFFFFF;
+  --olive:#7E8B4F;
+  --mustard:#E3B53B;
+  --sky:#9DC0EC;
+  --oak:#B98A55;
+  --foil:#E3B53B;
+  --hoop:#F4F2EC;
+  --night:#272B1F;
+  --night-ink:#F4F2EC;
+  --night-soft:#BDBBA9;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#1A1C15;--ground-2:#22251B;--ink:#EEEBE2;--ink-soft:#AAA898;
+    --line:#34372B;--accent:#A9B774;--night:#13150E;--night-ink:#F4F2EC;--night-soft:#B3B1A0;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#1A1C15;--ground-2:#22251B;--ink:#EEEBE2;--ink-soft:#AAA898;
+    --line:#34372B;--accent:#A9B774;--night:#13150E;--night-ink:#F4F2EC;--night-soft:#B3B1A0;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:1.125rem;line-height:1.6;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.label{font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.92;letter-spacing:.01em;text-wrap:balance;margin:0;text-transform:uppercase}
+h2{font-size:clamp(2.6rem,6vw,4.5rem)}
+p{margin:0}
+
+/* fan-page notice */
+.notice{background:var(--mustard);color:#1C1C18;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;line-height:1.5}
+.notice .wrap{padding-block:8px;text-align:center}
+.notice strong{font-weight:500;text-transform:uppercase;letter-spacing:.12em}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--night) 92%,transparent);backdrop-filter:blur(8px);color:var(--night-ink)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.mark{font-family:var(--display);font-weight:900;font-size:1.5rem;letter-spacing:.04em;text-decoration:none}
+.mark span{color:var(--foil)}
+.mark{display:inline-flex;align-items:center;gap:10px}
+.mark i{display:inline-grid;grid-template-columns:repeat(3,6px);gap:2px;height:18px}
+.mark i b{display:block}
+.mark i b:nth-child(1){background:var(--mustard)}.mark i b:nth-child(2){background:var(--olive)}.mark i b:nth-child(3){background:var(--sky)}
+nav ul{display:flex;gap:clamp(12px,3vw,28px);list-style:none;margin:0;padding:0;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+nav a{text-decoration:none;opacity:.8}
+nav a:hover{opacity:1;color:var(--foil)}
+
+/* hero */
+.hero{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:end;padding-block:clamp(48px,8vw,96px) clamp(40px,6vw,72px)}
+.hero .label{color:var(--night-soft)}
+.hero h1{font-size:clamp(3.6rem,10.5vw,9.5rem);font-weight:900;margin-block:18px 26px}
+.hero h1 .w{display:block;opacity:1;transform:none}
+.hero h1 .w:last-child{background:linear-gradient(100deg,#C4901C 0%,#F2CF63 38%,#D9A935 55%,#F6DA7E 78%,#C08D1C 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* bookmark ribbon in Celtic hoops, tucked into the top of the page */
+.ribbon{position:absolute;top:0;right:clamp(28px,7vw,96px);z-index:3;width:clamp(22px,2.4vw,30px);height:clamp(110px,16vw,170px);
+  background:repeating-linear-gradient(180deg,var(--olive) 0 14px,var(--hoop) 14px 28px);clip-path:polygon(0 0,100% 0,100% 100%,50% 86%,0 100%);
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);filter:drop-shadow(0 6px 6px rgba(0,0,0,.35))}
+.hero .lede{font-size:clamp(1.1rem,2vw,1.3rem);max-width:34ch;color:var(--night-ink)}
+.hero .lede em{color:var(--night-soft)}
+.portrait{aspect-ratio:11/15;max-width:100%;position:relative;margin:0;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.18) brightness(.92)}
+.portrait::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at 50% 40%,transparent 45%,rgba(4,8,12,.55) 100%)}
+.portrait::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background-image:var(--grain,none);opacity:.12;mix-blend-mode:overlay}
+.portrait figcaption,.portrait .corner{z-index:2}
+.portrait figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#EAF0EC;background:linear-gradient(transparent,rgba(8,16,22,.8))}
+.portrait .corner{position:absolute;width:18px;height:18px;border-color:var(--foil);border-style:solid}
+.c1{top:-1px;left:-1px;border-width:2px 0 0 2px}.c2{top:-1px;right:-1px;border-width:2px 2px 0 0}
+.c3{bottom:-1px;left:-1px;border-width:0 0 2px 2px}.c4{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1 .w{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .hero h1 .w:nth-child(2){animation-delay:.12s}
+  .hero h1 .w:nth-child(3){animation-delay:.24s}
+  .portrait img{animation:drift 24s ease-in-out infinite alternate}
+  @keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.12) translate(-1.5%,-2%)}}
+  @keyframes rise{from{transform:translateY(.35em);opacity:.15}to{transform:none;opacity:1}}
+}
+
+/* hero as a full-bleed scene */
+.hero.scene{height:max(min(88vh,860px),calc(100vw / 2.361));max-height:none}
+.hero.scene::before{background:linear-gradient(270deg,rgba(18,20,13,.78) 0,rgba(18,20,13,.35) 38%,transparent 62%),linear-gradient(180deg,rgba(18,20,13,.45) 0,transparent 22%,transparent 70%,rgba(18,20,13,.7) 100%)}
+.hero .wrap.hero-copy{position:absolute;left:0;right:0;bottom:0;z-index:2;display:grid;grid-template-columns:1fr;justify-items:end;text-align:right;gap:0;padding-block:0 clamp(28px,5vw,64px)}
+.hero .hero-copy h1{font-size:clamp(3rem,6.2vw,6.4rem);margin-block:12px 18px}
+.hero .hero-copy h1 .w{display:inline;margin-right:.22em}
+.hero .hero-copy h1 .w:last-child{display:block}
+.hero .hero-copy .lede{max-width:32ch}
+.hero .hero-copy .where{margin-top:18px;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--night-soft)}
+@media (max-width:760px){
+  .hero.scene{height:auto;padding-top:min(58vh,480px)}
+  .hero.scene .stage{height:min(58vh,480px);overflow:hidden}
+  .hero.scene::before{inset:0 0 auto 0;height:min(58vh,480px);background:linear-gradient(180deg,transparent 62%,var(--night) 100%)}
+  .hero .wrap.hero-copy{position:relative;justify-items:start;text-align:left;padding-block:4px 40px}
+}
+
+/* scoreline */
+.score{border-bottom:1px solid var(--line)}
+.score .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:28px 20px 28px 0;display:grid;gap:6px;align-content:start}
+.stat + .stat{padding-left:20px;border-left:1px solid var(--line)}
+.stat b{font-family:var(--display);font-weight:900;font-size:clamp(2.6rem,5vw,3.6rem);line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:.98rem;color:var(--ink-soft);line-height:1.4}
+
+section.block{padding-block:clamp(56px,9vw,112px)}
+.head{display:grid;gap:14px;margin-bottom:clamp(28px,5vw,48px);max-width:720px}
+.head p{color:var(--ink-soft)}
+
+/* route */
+.route{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.mapbox{background:var(--night);aspect-ratio:3/4;max-width:100%;position:relative}
+.mapbox canvas{width:100%;height:100%;display:block}
+.stops{list-style:none;margin:0;padding:0;display:grid}
+.stops li{display:grid;grid-template-columns:3.2rem 1fr;gap:16px;padding-block:22px;border-top:1px solid var(--line)}
+.stops li:last-child{border-bottom:1px solid var(--line)}
+.stops .n{font-family:var(--display);font-weight:900;font-size:2.4rem;line-height:1;color:var(--accent)}
+.stops h3{font-size:1.9rem;margin-bottom:6px}
+.stops .coord{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;color:var(--ink-soft);display:block;margin-bottom:8px}
+.stops p{font-size:1.02rem}
+
+/* bylines */
+.bylines{background:var(--ground-2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.pub{background:var(--ground);padding:28px 24px 30px;display:grid;gap:12px;align-content:start;text-decoration:none;transition:background .2s}
+a.pub:hover{background:var(--ground-2)}
+.pub h3{font-size:2rem}
+.pub p{font-size:1rem;color:var(--ink-soft)}
+.pub .go{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.pub.wide{grid-column:span 2}
+.pub.feature{grid-column:span 2;background:var(--night);color:var(--night-ink)}
+a.pub.feature:hover{background:color-mix(in srgb,var(--night) 80%,var(--olive))}
+.pub.feature .go{color:var(--foil)}
+.pub.feature p{color:var(--night-soft);max-width:52ch}
+.pub.feature h3{font-size:clamp(2.4rem,5vw,3.4rem)}
+
+/* blog */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:start}
+.pull{font-family:var(--body);font-style:italic;font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.25;text-wrap:balance}
+.pull::before{content:"";display:block;width:56px;height:18px;background:repeating-linear-gradient(180deg,var(--accent) 0 4px,transparent 4px 7px);margin-bottom:22px}
+.topics{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+.topics li{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);padding:6px 10px}
+.prose{display:grid;gap:18px;max-width:62ch}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(24px,5vw,64px);align-items:start}
+.about .big{font-size:clamp(1.5rem,2.8vw,2rem);line-height:1.3;text-wrap:balance}
+.facts{display:grid;gap:0;margin:0}
+.facts div{display:grid;grid-template-columns:8rem 1fr;gap:16px;padding-block:14px;border-top:1px solid var(--line)}
+.facts div:last-child{border-bottom:1px solid var(--line)}
+.facts dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);padding-top:4px}
+.facts dd{margin:0;font-size:1.02rem}
+
+/* selected writing */
+.picks{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,3vw,28px)}
+.pick{display:grid;gap:12px;align-content:start;padding:28px 0 0;border-top:4px solid var(--ink);text-decoration:none}
+.pick .kind{display:flex;justify-content:space-between;gap:12px}
+.pick h3{font-family:var(--body);text-transform:none;font-weight:600;font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.2;letter-spacing:0}
+.pick p{color:var(--ink-soft);font-size:1.02rem;max-width:52ch}
+.pick .go{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+a.pick:hover h3{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:5px}
+
+/* in & out */
+.inout{background:var(--night);color:var(--night-ink);padding-block:clamp(56px,8vw,96px);overflow:hidden}
+.inout .label{color:var(--night-soft)}
+.inout .head p{color:var(--night-soft)}
+.ticker{display:grid;gap:10px;margin-block:8px}
+.ticker .dir{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--foil)}
+.belt{display:flex;width:max-content;font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2rem,5vw,3.6rem);line-height:1;white-space:nowrap}
+.belt span{padding-right:.6em}
+.belt span:nth-child(even){-webkit-text-stroke:1px var(--night-ink);color:transparent}
+.rail{overflow:hidden;border-block:1px solid color-mix(in srgb,var(--night-ink) 18%,transparent);padding-block:14px}
+@media (prefers-reduced-motion:no-preference){
+  .belt.in{animation:beltL 60s linear infinite}
+  .belt.out{animation:beltR 60s linear infinite}
+  @keyframes beltL{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes beltR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,22px);margin-block:clamp(32px,5vw,56px)}
+.q{position:relative;margin:0;padding:26px 24px 24px;display:grid;gap:18px;align-content:space-between;border:1px solid color-mix(in srgb,var(--night-ink) 16%,transparent);min-height:15rem}
+.q blockquote{margin:0;font-family:var(--body);font-size:1.22rem;line-height:1.4;position:relative}
+.q figcaption{display:grid;gap:4px;position:relative}
+.q figcaption b{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.4rem;letter-spacing:.02em;line-height:1}
+.q figcaption span{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--night-soft)}
+.q .tag{position:absolute;top:-1px;right:-1px;font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;background:var(--night-ink);color:var(--night)}
+/* writers: ruled notebook lines with a margin rule */
+.q.writer{background:
+  linear-gradient(90deg,transparent 14px,color-mix(in srgb,var(--foil) 55%,transparent) 14px 15px,transparent 15px),
+  repeating-linear-gradient(transparent 0 33px,color-mix(in srgb,var(--night-ink) 7%,transparent) 33px 34px)}
+/* players: pitch markings, a centre circle and halfway line in the corner */
+.q.player{background:
+  radial-gradient(circle at 100% 100%,transparent 78px,color-mix(in srgb,var(--night-ink) 14%,transparent) 78px 80px,transparent 80px),
+  linear-gradient(90deg,transparent calc(100% - 1px),color-mix(in srgb,var(--night-ink) 14%,transparent) 0) ,
+  color-mix(in srgb,var(--olive) 22%,var(--night))}
+.q.player .tag{background:var(--sky);color:#1C1C18}
+
+/* the wedding coasters: two double-sided coasters that turn over */
+.table{margin-top:clamp(32px,5vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,5vw,64px);align-items:center}
+.tablehead{display:grid;gap:12px;max-width:46ch}
+.tablehead h3{font-size:clamp(1.8rem,3.4vw,2.6rem)}
+.tablehead p{color:var(--night-soft)}
+.tablehead em{color:var(--night-ink)}
+.coasters{background:radial-gradient(ellipse at 50% 55%,color-mix(in srgb,var(--oak) 30%,transparent),transparent 70%);display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,36px);align-items:center;padding-block:24px}
+.coin{appearance:none;background:none;border:0;padding:0;margin:0;cursor:pointer;perspective:1200px;display:block;width:100%;will-change:transform}
+.coin:nth-child(2){margin-top:clamp(40px,8vw,110px)}
+.coin .inner{display:grid;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.coin .face{grid-area:1/1;width:100%;height:auto;max-width:100%;display:block;backface-visibility:hidden;-webkit-backface-visibility:hidden;filter:drop-shadow(0 18px 18px rgba(0,0,0,.55))}
+.coin .back{transform:rotateY(180deg)}
+.coin:focus-visible{outline:2px solid var(--foil);outline-offset:8px;border-radius:50%}
+.flipnote{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--foil)}
+@media (max-width:760px){.table{grid-template-columns:1fr}}
+
+/* chapter scenes: a wide AI-extended landscape with his real photo layered on top */
+.scene{position:relative;overflow:hidden;background:var(--night);height:max(calc(100vw / (var(--arn,2.333))),340px);max-height:88vh;--focus:50%}
+.scene .stage{position:absolute;top:0;height:100%;aspect-ratio:var(--ar,21/9);left:50%;transform:translateX(calc(-1 * var(--focus)))}
+.scene .layer{position:absolute;display:block;max-width:none;will-change:transform}
+.scene .bg{inset:-6% 0 auto 0;width:100%;height:112%;object-fit:cover}
+.scene .fg{left:var(--fx);top:var(--fy);width:var(--fw);height:var(--fh);object-fit:cover;
+  -webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 45%,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 45%,#000 64%,transparent 100%)}
+.scene::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,transparent 55%,rgba(6,16,11,.85) 100%),radial-gradient(ellipse at 50% 45%,transparent 55%,rgba(6,16,11,.45) 100%)}
+.scene::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background-image:var(--grain,none);opacity:.1;mix-blend-mode:overlay}
+.scene .title{position:absolute;z-index:2;left:0;right:0;bottom:0;padding-bottom:clamp(18px,3vw,36px);color:var(--night-ink)}
+.scene .title .wrap{display:grid;gap:8px;justify-items:end;text-align:right}
+.scene .title h2{max-width:10ch}
+.scene .title .label{text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.scene .title.title-right h2{max-width:none;font-size:clamp(1.7rem,4vw,3.4rem)}
+.scene .title h2{max-width:9ch}
+.scene .title h2{font-size:clamp(2.2rem,5.5vw,4.6rem);background:linear-gradient(100deg,#C4901C 0%,#F2CF63 38%,#D9A935 55%,#F6DA7E 78%,#C08D1C 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.scene .title .label{color:var(--night-ink);opacity:.8}
+.scene .fg.cut{object-fit:fill;-webkit-mask-image:none;mask-image:none}
+@media (max-width:760px){
+  .scene{--focus:var(--mfocus,40%)!important}
+  .scene .title{top:0;bottom:auto;padding:14px 0 0}
+  .scene .title.title-right{top:auto;bottom:0;padding:0 0 14px}
+  .scene::before{background:linear-gradient(0deg,transparent 60%,rgba(6,16,11,.8) 100%),radial-gradient(ellipse at 50% 45%,transparent 55%,rgba(6,16,11,.45) 100%)}
+}
+
+/* portrait chapter: tall video beside the chapter text */
+.chapter{background:var(--night);color:var(--night-ink);padding-block:clamp(48px,7vw,88px);overflow:hidden}
+.chapter .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.chapter .frame{position:relative;aspect-ratio:506/810;max-width:100%;max-height:82vh;justify-self:center;overflow:hidden;box-shadow:0 30px 60px -24px rgba(0,0,0,.7)}
+.chapter .frame video{width:100%;height:100%;object-fit:cover;display:block}
+.chapter .frame::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:var(--grain,none);opacity:.1;mix-blend-mode:overlay}
+.chapter .text{display:grid;gap:16px;max-width:44ch}
+.chapter .text .label{color:var(--night-soft)}
+.chapter .text h2{font-size:clamp(2.4rem,5.5vw,4.6rem);background:linear-gradient(100deg,#C4901C 0%,#F2CF63 38%,#D9A935 55%,#F6DA7E 78%,#C08D1C 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chapter .text p{color:var(--night-soft)}
+@media (max-width:760px){.chapter .wrap{grid-template-columns:1fr}.chapter .frame{max-height:70vh}}
+
+/* recommendations */
+.recs{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(20px,3vw,40px)}
+.rec{margin:0;display:grid;gap:16px;align-content:space-between;padding-top:22px;border-top:1px solid var(--line)}
+.rec blockquote{margin:0;font-family:var(--body);font-style:italic;font-size:clamp(1.15rem,1.9vw,1.4rem);line-height:1.4}
+.rec blockquote::before{content:"“";display:block;font-family:var(--display);font-style:normal;font-weight:900;font-size:3rem;line-height:.6;color:var(--mustard);margin-bottom:6px}
+.rec figcaption{display:grid;gap:4px}
+.rec figcaption b{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.25rem;letter-spacing:.02em}
+.rec figcaption span{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);line-height:1.5}
+@media (max-width:760px){.recs{grid-template-columns:1fr}}
+
+/* photo strip */
+.photos{background:var(--night);color:var(--night-ink);padding-block:clamp(56px,8vw,96px)}
+.photos .head p{color:var(--night-soft)}
+.photos .label{color:var(--night-soft)}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 0 22px;border-block:6px dotted color-mix(in srgb,var(--night-ink) 22%,transparent)}
+.strip figure{margin:0;flex:none;scroll-snap-align:start;display:grid;gap:10px}
+.strip img{height:clamp(240px,34vw,360px);width:auto;max-width:none;display:block;filter:grayscale(1) contrast(1.15) brightness(.95)}
+.strip figcaption{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--night-soft);max-width:28ch}
+.hint{margin-top:14px;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--night-soft)}
+
+/* contact */
+.contact{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
+.contact .bgv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;opacity:.5;display:block}
+.contact::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(18,20,13,.85) 0,rgba(18,20,13,.35) 70%)}
+.contact .wrap{position:relative;z-index:1}
+.contact .open{margin-top:22px;max-width:40ch;font-size:clamp(1.1rem,1.8vw,1.3rem);color:var(--night-ink)}
+.contact h2{font-size:clamp(3rem,9vw,7rem)}
+.contact h2 span{color:var(--foil)}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:14px 20px;border:1px solid color-mix(in srgb,var(--night-ink) 35%,transparent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn:hover{border-color:var(--night-ink)}
+footer{background:var(--night);color:var(--night-soft);border-top:1px solid color-mix(in srgb,var(--night-ink) 12%,transparent)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+
+@media (max-width:860px){
+  .picks{grid-template-columns:1fr}
+  .quotes{grid-template-columns:1fr 1fr}
+  .hero .wrap,.route,.split,.about{grid-template-columns:1fr}
+  .portrait{max-width:360px;aspect-ratio:4/4}
+  .score .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .grid{grid-template-columns:1fr 1fr}
+  .mapbox{aspect-ratio:4/5}
+}
+@media (max-width:520px){
+  .quotes{grid-template-columns:1fr}
+  nav ul li:nth-child(n+3){display:none}
+  .grid{grid-template-columns:1fr}
+  .pub.feature,.pub.wide{grid-column:auto}
+}
+</style>
+<style>img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="notice" role="note"><div class="wrap"><strong>Unofficial fan page</strong> · Not created or endorsed by Ryan Kelly.</div></div>
+<nav>
+  <div class="wrap">
+    <a class="mark" href="#top"><i aria-hidden="true"><b></b><b></b><b></b></i>R<span>.</span>K</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#bylines">Bylines</a></li>
+      <li><a href="#words">Praise</a></li>
+      <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero scene" id="top" style="--ar:1004/426;--focus:50%;--mfocus:30%">
+  <div class="stage">
+    <video class="layer bg" data-speed="0.05" poster="img/scene7-glen.jpg" muted loop playsinline preload="auto" aria-label="Ryan Kelly in a knitted hat on the bog at Dunlewey, the ruined church and Errigal in mist behind him"><source src="img/scene7-glen.mp4" type="video/mp4"><source src="img/scene7-glen.webm" type="video/webm"></video>
+  </div>
+  <span class="ribbon" aria-hidden="true"></span>
+  <div class="wrap hero-copy">
+    <p class="label">Ryan Kelly · Writer &amp; editor · Cork</p>
+    <h1><span class="w">Nothing</span><span class="w">is</span><span class="w">written.</span></h1>
+    <p class="lede">Fourteen years at GOAL, from the Goal Ireland desk to its global English-language team. <em>Bylines in the Irish Times, Irish Independent and Irish Examiner.</em></p>
+    <p class="where">Dunlewey Old Church and Errigal, Donegal</p>
+  </div>
+</header>
+
+<section class="score" aria-label="Career at a glance">
+  <div class="wrap">
+    <div class="stat"><b>14</b><span>years at GOAL</span></div>
+    <div class="stat"><b>7</b><span>major tournaments covered</span></div>
+    <div class="stat"><b>6</b><span>newspapers and outlets</span></div>
+    <div class="stat"><b>14</b><span>languages of World Cup coverage he delivered in 2014</span></div>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="wrap about">
+    <div class="head" style="margin:0">
+      <p class="label">About</p>
+      <h2>Writer and editor</h2>
+    </div>
+    <div style="display:grid;gap:28px">
+      <p class="big">An experienced writer and editor. Most recently at GOAL, he specialised in high-impact SEO content, audience development and affiliate marketing.</p>
+      <dl class="facts">
+        <div><dt>2017–2026</dt><dd>Senior Content Editor, SEO and affiliate marketing, on GOAL's English-language team</dd></div>
+        <div><dt>2015–2017</dt><dd>Chief Editor, Goal Ireland: League of Ireland, both international sides and Irish players abroad</dd></div>
+        <div><dt>2012–2015</dt><dd>Deputy Editor, Goal Ireland</dd></div>
+        <div><dt>Since 2012</dt><dd>Freelance writer and editor for newspapers and online outlets</dd></div>
+        <div><dt>Strengths</dt><dd>Writing, copy editing, SEO, audience development and affiliate strategy</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="route">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">The route</p>
+      <h2>Down the west of Ireland</h2>
+      <p>Born in Letterkenny, schooled in Derry, educated in Galway, and now writing from Cork.</p>
+    </div>
+    <div class="route">
+      <div class="mapbox"><canvas id="map" role="img" aria-label="Map of Ireland tracing Letterkenny, Derry, Galway and Cork"></canvas></div>
+      <ol class="stops">
+        <li><span class="n">1</span><div><h3>Letterkenny</h3><span class="coord">54.95° N · 7.73° W</span><p>Where it started. His mother's town, in the green and gold of Donegal.</p></div></li>
+        <li><span class="n">2</span><div><h3>Derry</h3><span class="coord">54.99° N · 7.32° W</span><p>Educated at St Columb's College, the school of Heaney and Hume.</p></div></li>
+        <li><span class="n">3</span><div><h3>Galway</h3><span class="coord">53.27° N · 9.05° W</span><p>A BA in English Literature and Classics, then an MA in Classics, with a President's Award along the way. His thesis, <em>The Katabasis of Kubrick</em>, traced classical themes in Kubrick's films. He played for the university soccer team, and met his wife here.</p></div></li>
+        <li><span class="n">4</span><div><h3>Cork</h3><span class="coord">51.90° N · 8.47° W</span><p>Home now, and the base for his writing and editing.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="chapter-2" aria-label="Donegal: the edge of the island">
+  <div class="wrap">
+    <div class="frame">
+      <video poster="img/scene2-malin.jpg" muted loop playsinline preload="metadata" aria-label="Ryan smiling on the cliff top at Malin Head, the signal tower behind him and the Atlantic breaking on the rocks below"><source src="img/scene2-malin.mp4" type="video/mp4"><source src="img/scene2-malin.webm" type="video/webm"></video>
+    </div>
+    <div class="text">
+      <p class="label">Donegal · Banba's Crown, Malin Head</p>
+      <h2>The edge of the island</h2>
+      <p>The most northerly point on the island of Ireland, in the county where his story starts. Beyond the signal tower there is nothing but the Atlantic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block bylines" id="bylines">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">Bylines</p>
+      <h2>Where the work runs</h2>
+      <p>Deputy editor, then chief editor of Goal Ireland, then senior content editor on GOAL's English-language team. Freelance for Ireland's national and regional papers since 2012.</p>
+    </div>
+    <div class="grid">
+      <a class="pub feature" href="https://www.goal.com/en-us/author/ryan-kelly/8/blt61166f20b49a6477" target="_blank" rel="noopener">
+        <span class="label" style="color:var(--night-soft)">2012–2026 · Deputy, Chief and Senior Content Editor</span>
+        <h3>GOAL</h3>
+        <p>Fourteen years and seven major tournaments. In 2014 he coordinated GOAL's live World Cup package for MSN: every match, in 14 languages, across 18 territories.</p>
+        <span class="go">Read his GOAL articles →</span>
+      </a>
+      <div class="pub"><span class="label">National</span><h3>The Irish Times</h3><p>Football coverage and features.</p></div>
+      <div class="pub"><span class="label">National</span><h3>Irish Independent</h3><p>Reporting on Irish football's big moments.</p></div>
+      <div class="pub"><span class="label">National</span><h3>Irish Examiner</h3><p>Freelance contributions.</p></div>
+      <div class="pub"><span class="label">Cork</span><h3>The Echo</h3><p>Formerly the Evening Echo, Cork's own paper.</p></div>
+      <div class="pub"><span class="label">West Cork</span><h3>The Southern Star</h3><p>Freelance contributions.</p></div>
+      <a class="pub wide" href="https://nothingiswritten.blog" target="_blank" rel="noopener"><span class="label">Personal</span><h3>Nothing is written</h3><p>His own blog, on sport and everything around it.</p><span class="go">Visit the blog →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="words">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">From his LinkedIn recommendations</p>
+      <h2>In their words</h2>
+    </div>
+    <div class="recs">
+      <figure class="rec"><blockquote>Ryan is an excellent journalist with outstanding knowledge of sport, search engine optimisation, and how to turn information into interesting copy.</blockquote>
+        <figcaption><b>Miles Chambers</b><span>Head of Content Strategy, Footballco · managed Ryan</span></figcaption></figure>
+      <figure class="rec"><blockquote>Ryan has been absolutely crucial to GOAL's audience growth and affiliate success. He would be a major asset for any newsroom or affiliate team.</blockquote>
+        <figcaption><b>Stefan Coerts</b><span>Executive Editor in Chief, Footballco</span></figcaption></figure>
+      <figure class="rec"><blockquote>He had a sharp eye for commercial opportunity and the editorial discipline to act on it. … A hard worker, a clear thinker, and someone who made the broader team better.</blockquote>
+        <figcaption><b>Jamie Jones</b><span>Head of Content &amp; Audience · led affiliate at Footballco</span></figcaption></figure>
+      <figure class="rec"><blockquote>He co-ordinated the smooth delivery of live coverage of every single World Cup match in 14 languages across 18 different territories.</blockquote>
+        <figcaption><b>James R Marley</b><span>Former FIFA+ Launch Director · managed Ryan at GOAL, 2014</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="chapter-5" aria-label="Cork: the bells of Shandon" style="--ar:1004/426;--arn:2.357;--focus:50%;--mfocus:32%">
+  <div class="stage">
+    <video class="layer bg" data-speed="0.05" poster="img/scene5-cork.jpg" muted loop playsinline preload="metadata" aria-label="Ryan in sunglasses beside the plaque for General Tom Barry, a steep Cork street and the Shandon bell tower behind him"><source src="img/scene5-cork.mp4" type="video/mp4"><source src="img/scene5-cork.webm" type="video/webm"></video>
+  </div>
+  <div class="title title-right"><div class="wrap">
+    <p class="label">Cork · Shandon</p>
+    <h2>The bells of Shandon</h2>
+  </div></div>
+</section>
+
+<section class="block" id="writing">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">Selected writing</p>
+      <h2>Start here</h2>
+    </div>
+    <div class="picks">
+      <a class="pick" href="https://nothingiswritten.blog/2026/06/01/a-falling-away-reflections-on-paddys-30th-birthday/" target="_blank" rel="noopener">
+        <span class="kind"><span class="label">Personal essay</span><span class="label">Nothing is written · 2026</span></span>
+        <h3>A falling away: reflections on Paddy's 30th birthday</h3>
+        <p>A long-form essay on memory and the passage of time, in his most personal voice.</p>
+        <span class="go">Read the essay →</span>
+      </a>
+      <a class="pick" href="https://www.goal.com/en/news/why-salford-city-fans-sing-dirty-old-town/blta72f8c91e2da7eb0" target="_blank" rel="noopener">
+        <span class="kind"><span class="label">Football &amp; culture</span><span class="label">GOAL</span></span>
+        <h3>Why Salford City fans sing 'Dirty Old Town'</h3>
+        <p>How Ewan MacColl's 1949 song about Salford's gasworks and canal became a terrace anthem, and why so many people think it's Irish.</p>
+        <span class="go">Read on GOAL →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="inout" id="influences">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">Influences</p>
+      <h2>What goes in, what comes out</h2>
+      <p>Lines from writers and players on the game and on life, and the subjects he writes about in return.</p>
+    </div>
+  </div>
+  <div class="ticker" aria-label="Going in: writers and players">
+    <div class="wrap"><span class="dir">← Going in · the teachings</span></div>
+    <div class="rail"><div class="belt in" aria-hidden="true"><span>Heaney</span><span>Cicero</span><span>Blanchflower</span><span>Kavanagh</span><span>Camus</span><span>Cruyff</span><span>Brontë</span><span>Hurston</span><span>Ballard</span><span>Hume</span><span>Lawrence</span><span>Best</span><span>Heaney</span><span>Cicero</span><span>Blanchflower</span><span>Kavanagh</span><span>Camus</span><span>Cruyff</span><span>Brontë</span><span>Hurston</span><span>Ballard</span><span>Hume</span><span>Lawrence</span><span>Best</span></div></div>
+  </div>
+  <div class="wrap">
+    <div class="table">
+      <div class="tablehead">
+        <p class="label">On the tables at his wedding</p>
+        <h3>Written by hand</h3>
+        <p>Two keen readers made these by hand for the day, slices of pine written on in pen: a line on one side, a book on the other. Hurston's <em>“There are years that ask questions and years that answer”</em> turns over to <em>Their Eyes Were Watching God</em>, the novel it comes from. Another turns over to Ballard's <em>Empire of the Sun</em>.</p>
+        <p class="flipnote">Tap a coaster to turn it over</p>
+      </div>
+      <div class="coasters">
+        <button class="coin" type="button" data-tilt="-6" data-depth="0.18" aria-pressed="false" aria-label="Coaster: There are years that ask questions and years that answer. Other side: Zora Neale Hurston, Their Eyes Were Watching God. Press to turn over.">
+          <span class="inner"><img class="face front" src="img/coaster-years.webp" alt="" loading="lazy"><img class="face back" src="img/coaster-hurston.webp" alt="" loading="lazy"></span>
+        </button>
+        <button class="coin" type="button" data-tilt="7" data-depth="-0.12" aria-pressed="false" aria-label="Coaster: If you can find a way of helping people, you'll live off the interest. Other side: J.G. Ballard, Empire of the Sun. Press to turn over.">
+          <span class="inner"><img class="face front" src="img/coaster-helping.webp" alt="" loading="lazy"><img class="face back" src="img/coaster-ballard.webp" alt="" loading="lazy"></span>
+        </button>
+      </div>
+    </div>
+    <div class="quotes">
+      <figure class="q writer"><span class="tag">Writer</span>
+        <blockquote>“I made the Iliad from such / A local row. Gods make their own importance.”</blockquote>
+        <figcaption><b>Patrick Kavanagh</b><span>“Epic”, 1951 · Co. Monaghan</span></figcaption></figure>
+      <figure class="q player"><span class="tag">Player</span>
+        <blockquote>“The game is about glory. It is about doing things in style and with a flourish.”</blockquote>
+        <figcaption><b>Danny Blanchflower</b><span>Belfast · Spurs &amp; Northern Ireland captain</span></figcaption></figure>
+      <figure class="q writer"><span class="tag">Writer</span>
+        <blockquote>“To be ignorant of what occurred before you were born is to remain always a child.”</blockquote>
+        <figcaption><b>Cicero</b><span>Orator, 46 BC</span></figcaption></figure>
+      <figure class="q player"><span class="tag">Goalkeeper</span>
+        <blockquote>“What I know most surely about morality and the duty of man I owe to football.”</blockquote>
+        <figcaption><b>Albert Camus</b><span>Keeper, Racing Universitaire d'Alger · Nobel 1957</span></figcaption></figure>
+      <figure class="q writer"><span class="tag">Writer</span>
+        <blockquote>“Walk on air against your better judgement.”</blockquote>
+        <figcaption><b>Seamus Heaney</b><span>“The Gravel Walks” · St Columb's College, Derry</span></figcaption></figure>
+      <figure class="q player"><span class="tag">Player</span>
+        <blockquote>“Playing football is very simple, but playing simple football is the hardest thing there is.”</blockquote>
+        <figcaption><b>Johan Cruyff</b><span>Ajax, Barcelona &amp; the Netherlands</span></figcaption></figure>
+    </div>
+  </div>
+  <div class="ticker" aria-label="Going out: what he writes about">
+    <div class="rail"><div class="belt out" aria-hidden="true"><span>Football history</span><span>Terrace songs</span><span>Memory</span><span>Philosophy</span><span>The Irish game</span><span>Politics</span><span>Literature</span><span>Place</span><span>Football history</span><span>Terrace songs</span><span>Memory</span><span>Philosophy</span><span>The Irish game</span><span>Politics</span><span>Literature</span><span>Place</span></div></div>
+    <div class="wrap" style="text-align:right"><span class="dir">Going out · the voice →</span></div>
+  </div>
+</section>
+
+<section class="scene" id="fort" aria-label="Donegal: the fort on the hill" style="--ar:2000/847;--arn:2.361;--focus:50%;--mfocus:36%;--fx:30.46%;--fy:42%;--fw:8.74%;--fh:45.49%">
+  <div class="stage">
+    <video class="layer bg" data-speed="0.05" poster="img/scene1-bg.jpg" muted loop playsinline preload="metadata" aria-hidden="true"><source src="img/scene1-bg.mp4" type="video/mp4"><source src="img/scene1-bg.webm" type="video/webm"></video>
+    <img class="layer fg cut" data-speed="0.08" src="img/scene1-ryan.webp" alt="Ryan standing by the stone walls of Grianán of Aileach, Lough Swilly behind him" loading="lazy">
+  </div>
+  <div class="title title-right"><div class="wrap">
+    <p class="label">Donegal · Grianán of Aileach</p>
+    <h2>The fort on the hill</h2>
+  </div></div>
+</section>
+
+<section class="block" id="blog">
+  <div class="wrap split">
+    <div>
+      <p class="label" style="margin-bottom:18px">Nothing is written</p>
+      <p class="pull">“Truly, for some men, nothing is written unless they write it.”</p>
+      <p class="label" style="margin-top:14px">Lawrence of Arabia, 1962. The line that named the blog.</p>
+      <ul class="topics">
+        <li>Sport</li><li>Philosophy</li><li>Current affairs</li><li>Literature</li><li>History</li><li>Popular culture</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <p>Away from match reports and deadlines, Ryan's blog follows his curiosity wherever it goes: politics and society, books, history and pop culture, and always sport.</p>
+      <p>It's where the longer, slower pieces live, the ones that don't fit a match report.</p>
+      <p><a class="btn primary" href="https://nothingiswritten.blog" target="_blank" rel="noopener">Read the latest posts</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="photos" id="photos">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">Off the page</p>
+      <h2>Away from the desk</h2>
+    </div>
+    <div class="strip" tabindex="0" aria-label="Photos of Ryan, scroll sideways">
+      <figure><img src="img/river.jpg" alt="Selfie by a mountain stream, wearing a knitted hat" loading="lazy"><figcaption>Out walking</figcaption></figure>
+      <figure><img src="img/tom-barry.jpg" alt="Ryan in sunglasses beside a plaque for General Tom Barry" loading="lazy"><figcaption>With Gen. Tom Barry, West Cork Flying Column</figcaption></figure>
+      <figure><img src="img/malin-head.jpg" alt="Smiling selfie on the cliffs above the sea" loading="lazy"><figcaption>Malin Head, Donegal</figcaption></figure>
+      <figure><img src="img/bohs.jpg" alt="Ryan in a Bohemians t-shirt" loading="lazy"><figcaption>Bohs on the shirt</figcaption></figure>
+      <figure><img src="img/suited.jpg" alt="Ryan in a tweed three-piece suit, hands on hips, on a country lane" loading="lazy"><figcaption>Suited up</figcaption></figure>
+      <figure><img src="img/early-1.jpg" alt="A younger Ryan smiling at the camera" loading="lazy"><figcaption>The early years</figcaption></figure>
+      <figure><img src="img/early-2.jpg" alt="A younger Ryan, chin in hand" loading="lazy"><figcaption>Thinking it over</figcaption></figure>
+    </div>
+    <p class="hint">Scroll sideways</p>
+  </div>
+</section>
+
+<section class="block contact" id="contact">
+  <video class="bgv" poster="img/glen-empty.jpg" muted loop playsinline preload="metadata" aria-hidden="true"><source src="img/glen-empty.mp4" type="video/mp4"><source src="img/glen-empty.webm" type="video/webm"></video>
+  <div class="wrap">
+    <p class="label" style="color:var(--night-soft);margin-bottom:18px">Writing, editing, SEO and content strategy</p>
+    <h2>Get in <span>touch.</span></h2>
+    <p class="open">Ryan is open to new writing and editing roles, in Cork or remote.</p>
+    <div class="row">
+      <a class="btn primary" href="https://www.linkedin.com/in/ryan-kelly-02332943/" target="_blank" rel="noopener">Ryan on LinkedIn</a>
+      <a class="btn" href="https://nothingiswritten.blog/about/" target="_blank" rel="noopener">Nothing is written</a>
+      
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>An unofficial fan page by his uncle Christian</span><span>Letterkenny · Derry · Galway · Cork</span></div></footer>
+
+<script>
+(function(){
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+  // Coasters: tap to turn over; with motion allowed they also turn once as they pass mid-screen, and drift at different speeds
+  const coins = [...document.querySelectorAll('.coin')];
+  const flipped = new Map(coins.map(c=>[c,false]));
+  coins.forEach(c=>c.addEventListener('click',()=>{ flipped.set(c,!flipped.get(c)); c.setAttribute('aria-pressed',flipped.get(c)); paintCoins(); }));
+  const smooth = t => t<=0?0:t>=1?1:t*t*(3-2*t);
+  function paintCoins(){
+    const vh = innerHeight;
+    coins.forEach(c=>{
+      const r = c.getBoundingClientRect();
+      const p = reduce ? 0 : Math.max(0,Math.min(1,(vh - r.top)/(vh + r.height)));
+      const turn = reduce ? 0 : smooth((p-.4)/.25)*180;
+      const lift = reduce ? 0 : (p-.5)*(+c.dataset.depth)*-420;
+      const ang = turn + (flipped.get(c)?180:0);
+      c.style.transform = `translateY(${lift.toFixed(1)}px)`;
+      c.firstElementChild.style.transform = `rotate(${c.dataset.tilt}deg) rotateY(${ang}deg)`;
+    });
+  }
+
+  // Chapter scenes: each layer drifts at its own speed (data-speed) as the panel crosses the screen
+  const sceneLayers = [...document.querySelectorAll('.scene .layer')];
+  function paintScenes(){
+    if(reduce) return;
+    const vh = innerHeight;
+    sceneLayers.forEach(l=>{
+      const r = l.closest('.scene').getBoundingClientRect();
+      if(r.bottom < -50 || r.top > vh + 50) return;
+      const p = (vh - r.top)/(vh + r.height) - .5;
+      l.style.transform = `translateY(${(p * -r.height * +l.dataset.speed * 2).toFixed(1)}px)`;
+    });
+  }
+
+  // Chapter videos: play only while on screen, and never for reduced motion (the poster still shows instead)
+  document.querySelectorAll('.scene video, .chapter video, .contact video').forEach(v=>{
+    if(reduce || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(e=>{ e[0].isIntersecting ? v.play().catch(()=>{}) : v.pause(); },{threshold:.15}).observe(v);
+  });
+
+  // Parallax: hero photo and headline move at different speeds
+  const heroH = document.querySelector('.hero h1');
+  function paintParallax(){
+    if(reduce) return;
+    const y = scrollY;
+    if(y < innerHeight*1.2){ heroH.style.transform = `translateY(${(y*-0.06).toFixed(1)}px)`; }
+  }
+  let ticking = false;
+  addEventListener('scroll',()=>{ if(!ticking){ ticking = true; requestAnimationFrame(()=>{ paintCoins(); paintParallax(); paintScenes(); ticking = false; }); } },{passive:true});
+  addEventListener('resize',paintCoins);
+  paintCoins(); paintScenes();
+
+  // Film grain texture for the photographs
+  try{
+    const g = document.createElement('canvas'); g.width = g.height = 140;
+    const gx = g.getContext('2d'), im = gx.createImageData(140,140);
+    for(let i=0;i<im.data.length;i+=4){ const v = Math.random()*255|0; im.data[i]=im.data[i+1]=im.data[i+2]=v; im.data[i+3]=255; }
+    gx.putImageData(im,0,0);
+    document.documentElement.style.setProperty('--grain', `url(${g.toDataURL()})`);
+  }catch(e){}
+
+
+  // Route map: Natural Earth 1:10m coastline (world-atlas), equirectangular with cos(lat) correction
+  const IRL = {"land":[[[-7.249,55.07],[-7.267,55.065],[-7.285,55.052],[-7.357,55.041],[-7.378,55.03],[-7.403,55.004],[-7.411,54.992],[-7.407,54.959],[-7.414,54.945],[-7.436,54.938],[-7.447,54.932],[-7.45,54.92],[-7.443,54.895],[-7.454,54.862],[-7.472,54.846],[-7.544,54.793],[-7.551,54.78],[-7.551,54.754],[-7.544,54.744],[-7.565,54.739],[-7.587,54.744],[-7.616,54.739],[-7.648,54.744],[-7.666,54.739],[-7.702,54.719],[-7.738,54.707],[-7.771,54.705],[-7.803,54.716],[-7.832,54.731],[-7.846,54.731],[-7.879,54.71],[-7.929,54.697],[-7.915,54.689],[-7.915,54.672],[-7.907,54.661],[-7.889,54.655],[-7.871,54.653],[-7.853,54.636],[-7.839,54.631],[-7.821,54.638],[-7.799,54.634],[-7.771,54.618],[-7.753,54.614],[-7.738,54.619],[-7.72,54.626],[-7.709,54.604],[-7.749,54.596],[-7.85,54.542],[-7.886,54.531],[-7.925,54.533],[-8.001,54.543],[-8.023,54.53],[-8.044,54.513],[-8.055,54.498],[-8.073,54.488],[-8.098,54.479],[-8.149,54.469],[-8.167,54.464],[-8.159,54.447],[-8.145,54.43],[-8.123,54.415],[-8.08,54.379],[-8.055,54.366],[-8.03,54.358],[-8.001,54.358],[-7.979,54.327],[-7.969,54.312],[-7.951,54.3],[-7.933,54.297],[-7.897,54.293],[-7.879,54.287],[-7.875,54.271],[-7.868,54.228],[-7.857,54.211],[-7.835,54.204],[-7.781,54.201],[-7.724,54.202],[-7.706,54.201],[-7.634,54.168],[-7.623,54.153],[-7.609,54.14],[-7.501,54.125],[-7.479,54.128],[-7.439,54.146],[-7.414,54.146],[-7.425,54.136],[-7.411,54.136],[-7.396,54.126],[-7.375,54.123],[-7.328,54.114],[-7.31,54.114],[-7.331,54.143],[-7.324,54.155],[-7.295,54.165],[-7.295,54.146],[-7.299,54.126],[-7.281,54.126],[-7.27,54.133],[-7.259,54.152],[-7.267,54.162],[-7.245,54.167],[-7.256,54.177],[-7.256,54.19],[-7.241,54.202],[-7.173,54.216],[-7.155,54.224],[-7.159,54.241],[-7.144,54.253],[-7.18,54.27],[-7.177,54.283],[-7.209,54.293],[-7.205,54.305],[-7.191,54.307],[-7.184,54.317],[-7.195,54.331],[-7.184,54.337],[-7.169,54.336],[-7.126,54.349],[-7.079,54.395],[-7.051,54.412],[-7.018,54.413],[-6.986,54.403],[-6.921,54.373],[-6.907,54.349],[-6.885,54.346],[-6.871,54.325],[-6.86,54.307],[-6.856,54.293],[-6.863,54.283],[-6.881,54.276],[-6.845,54.266],[-6.835,54.253],[-6.824,54.233],[-6.806,54.216],[-6.788,54.202],[-6.766,54.192],[-6.745,54.184],[-6.723,54.189],[-6.705,54.199],[-6.683,54.194],[-6.662,54.184],[-6.647,54.173],[-6.633,54.15],[-6.644,54.131],[-6.665,54.114],[-6.655,54.103],[-6.673,54.069],[-6.658,54.06],[-6.629,54.042],[-6.615,54.037],[-6.604,54.045],[-6.593,54.052],[-6.572,54.05],[-6.478,54.067],[-6.449,54.069],[-6.439,54.059],[-6.403,54.06],[-6.377,54.064],[-6.367,54.076],[-6.37,54.091],[-6.356,54.111],[-6.338,54.103],[-6.313,54.099],[-6.298,54.104],[-6.284,54.106],[-6.269,54.098],[-6.208,54.062],[-6.19,54.057],[-6.169,54.04],[-6.143,54.035],[-6.125,54.03],[-6.107,54.013],[-6.111,54.001],[-6.143,53.978],[-6.161,53.974],[-6.187,53.979],[-6.208,53.988],[-6.223,53.996],[-6.237,53.995],[-6.305,54.011],[-6.359,54.016],[-6.349,54.003],[-6.367,53.981],[-6.374,53.964],[-6.377,53.935],[-6.377,53.917],[-6.374,53.9],[-6.352,53.881],[-6.316,53.871],[-6.244,53.864],[-6.255,53.839],[-6.255,53.822],[-6.244,53.807],[-6.223,53.797],[-6.244,53.782],[-6.248,53.756],[-6.244,53.729],[-6.241,53.685],[-6.237,53.67],[-6.23,53.657],[-6.223,53.647],[-6.212,53.64],[-6.197,53.635],[-6.169,53.606],[-6.143,53.594],[-6.111,53.586],[-6.093,53.577],[-6.086,53.567],[-6.079,53.555],[-6.075,53.54],[-6.082,53.527],[-6.1,53.51],[-6.104,53.495],[-6.125,53.469],[-6.14,53.471],[-6.158,53.473],[-6.179,53.469],[-6.194,53.461],[-6.129,53.442],[-6.122,53.42],[-6.115,53.41],[-6.125,53.398],[-6.111,53.393],[-6.068,53.392],[-6.05,53.385],[-6.061,53.368],[-6.075,53.366],[-6.089,53.375],[-6.104,53.378],[-6.118,53.39],[-6.133,53.392],[-6.151,53.387],[-6.215,53.358],[-6.212,53.339],[-6.187,53.324],[-6.169,53.306],[-6.154,53.299],[-6.125,53.295],[-6.107,53.289],[-6.097,53.277],[-6.104,53.265],[-6.107,53.243],[-6.104,53.23],[-6.1,53.214],[-6.089,53.204],[-6.079,53.196],[-6.071,53.184],[-6.079,53.165],[-6.064,53.154],[-6.032,53.111],[-6.032,53.088],[-6.035,53.064],[-6.039,53.04],[-6.046,53.025],[-6.05,53.01],[-6.039,52.993],[-5.996,52.964],[-6.007,52.954],[-6.021,52.931],[-6.039,52.919],[-6.071,52.872],[-6.107,52.84],[-6.118,52.831],[-6.129,52.816],[-6.154,52.769],[-6.147,52.747],[-6.169,52.716],[-6.215,52.666],[-6.219,52.647],[-6.219,52.632],[-6.208,52.603],[-6.205,52.588],[-6.208,52.546],[-6.223,52.529],[-6.284,52.466],[-6.302,52.455],[-6.316,52.448],[-6.334,52.434],[-6.356,52.409],[-6.367,52.394],[-6.367,52.375],[-6.363,52.358],[-6.367,52.345],[-6.381,52.357],[-6.449,52.357],[-6.467,52.36],[-6.464,52.379],[-6.482,52.373],[-6.496,52.365],[-6.482,52.355],[-6.467,52.346],[-6.457,52.336],[-6.449,52.323],[-6.457,52.313],[-6.424,52.308],[-6.413,52.299],[-6.395,52.297],[-6.374,52.323],[-6.388,52.296],[-6.37,52.272],[-6.32,52.24],[-6.349,52.198],[-6.359,52.186],[-6.37,52.179],[-6.388,52.179],[-6.399,52.186],[-6.388,52.194],[-6.381,52.208],[-6.395,52.213],[-6.41,52.203],[-6.421,52.196],[-6.467,52.193],[-6.449,52.2],[-6.464,52.208],[-6.489,52.2],[-6.536,52.193],[-6.579,52.178],[-6.597,52.179],[-6.622,52.196],[-6.64,52.203],[-6.716,52.216],[-6.788,52.21],[-6.806,52.213],[-6.791,52.225],[-6.777,52.233],[-6.766,52.245],[-6.763,52.262],[-6.777,52.25],[-6.791,52.24],[-6.813,52.235],[-6.831,52.24],[-6.838,52.227],[-6.838,52.213],[-6.824,52.22],[-6.82,52.206],[-6.831,52.193],[-6.82,52.186],[-6.896,52.152],[-6.907,52.146],[-6.917,52.134],[-6.932,52.125],[-6.95,52.13],[-6.939,52.144],[-6.928,52.151],[-6.914,52.156],[-6.903,52.162],[-6.921,52.213],[-6.935,52.228],[-6.95,52.237],[-6.971,52.247],[-6.986,52.279],[-6.997,52.289],[-6.993,52.277],[-6.989,52.262],[-6.986,52.247],[-6.971,52.23],[-6.982,52.196],[-6.953,52.186],[-6.971,52.171],[-7,52.147],[-7.018,52.139],[-7.04,52.135],[-7.083,52.134],[-7.105,52.13],[-7.101,52.142],[-7.072,52.166],[-7.094,52.173],[-7.119,52.173],[-7.112,52.159],[-7.13,52.157],[-7.148,52.156],[-7.162,52.144],[-7.187,52.132],[-7.205,52.132],[-7.245,52.139],[-7.436,52.125],[-7.504,52.103],[-7.54,52.098],[-7.551,52.09],[-7.565,52.083],[-7.576,52.095],[-7.583,52.105],[-7.601,52.102],[-7.619,52.091],[-7.63,52.08],[-7.627,52.063],[-7.616,52.07],[-7.601,52.071],[-7.583,52.068],[-7.555,52.061],[-7.544,52.054],[-7.551,52.043],[-7.583,52.029],[-7.587,51.999],[-7.598,51.988],[-7.616,51.983],[-7.634,51.977],[-7.688,51.98],[-7.709,51.973],[-7.717,51.96],[-7.724,51.945],[-7.828,51.953],[-7.835,51.967],[-7.85,51.98],[-7.853,51.951],[-7.871,51.929],[-7.886,51.919],[-7.9,51.912],[-7.922,51.912],[-7.893,51.896],[-7.893,51.882],[-7.915,51.875],[-7.954,51.87],[-8.008,51.855],[-8.023,51.843],[-8.005,51.83],[-8.019,51.825],[-8.095,51.815],[-8.134,51.804],[-8.195,51.801],[-8.224,51.803],[-8.246,51.803],[-8.242,51.818],[-8.224,51.823],[-8.231,51.837],[-8.217,51.838],[-8.203,51.842],[-8.188,51.848],[-8.174,51.857],[-8.188,51.862],[-8.203,51.864],[-8.195,51.877],[-8.181,51.884],[-8.188,51.894],[-8.203,51.892],[-8.224,51.891],[-8.242,51.892],[-8.285,51.892],[-8.293,51.904],[-8.311,51.901],[-8.329,51.896],[-8.347,51.892],[-8.39,51.894],[-8.408,51.892],[-8.429,51.884],[-8.397,51.877],[-8.354,51.874],[-8.329,51.862],[-8.347,51.83],[-8.311,51.831],[-8.3,51.823],[-8.296,51.811],[-8.314,51.806],[-8.285,51.803],[-8.303,51.786],[-8.3,51.772],[-8.303,51.759],[-8.336,51.735],[-8.347,51.725],[-8.372,51.715],[-8.411,51.71],[-8.437,51.693],[-8.455,51.712],[-8.473,51.717],[-8.465,51.695],[-8.483,51.678],[-8.491,51.698],[-8.512,51.706],[-8.559,51.706],[-8.548,51.696],[-8.527,51.695],[-8.509,51.7],[-8.498,51.693],[-8.505,51.683],[-8.519,51.678],[-8.537,51.654],[-8.537,51.637],[-8.534,51.622],[-8.53,51.61],[-8.545,51.619],[-8.559,51.637],[-8.573,51.646],[-8.588,51.646],[-8.638,51.637],[-8.757,51.646],[-8.743,51.636],[-8.728,51.63],[-8.689,51.63],[-8.696,51.62],[-8.681,51.61],[-8.699,51.597],[-8.696,51.576],[-8.735,51.58],[-8.75,51.58],[-8.764,51.59],[-8.8,51.59],[-8.822,51.595],[-8.854,51.597],[-8.869,51.585],[-8.879,51.568],[-8.887,51.556],[-8.923,51.548],[-8.933,51.536],[-8.951,51.544],[-8.98,51.561],[-9.002,51.563],[-9.016,51.556],[-9.074,51.549],[-9.11,51.561],[-9.106,51.549],[-9.117,51.538],[-9.128,51.529],[-9.142,51.524],[-9.16,51.522],[-9.185,51.526],[-9.189,51.514],[-9.203,51.507],[-9.214,51.494],[-9.225,51.487],[-9.243,51.489],[-9.265,51.487],[-9.268,51.499],[-9.301,51.497],[-9.308,51.487],[-9.322,51.484],[-9.337,51.477],[-9.38,51.473],[-9.362,51.484],[-9.347,51.5],[-9.362,51.495],[-9.376,51.495],[-9.369,51.509],[-9.358,51.517],[-9.333,51.527],[-9.319,51.534],[-9.337,51.538],[-9.369,51.526],[-9.38,51.512],[-9.401,51.5],[-9.412,51.511],[-9.405,51.533],[-9.401,51.546],[-9.427,51.558],[-9.445,51.56],[-9.448,51.544],[-9.477,51.534],[-9.549,51.526],[-9.553,51.512],[-9.574,51.509],[-9.599,51.497],[-9.628,51.494],[-9.643,51.516],[-9.657,51.521],[-9.718,51.48],[-9.704,51.473],[-9.772,51.453],[-9.769,51.465],[-9.808,51.446],[-9.819,51.458],[-9.812,51.473],[-9.826,51.479],[-9.812,51.492],[-9.794,51.5],[-9.758,51.522],[-9.74,51.529],[-9.704,51.536],[-9.682,51.543],[-9.664,51.551],[-9.621,51.583],[-9.603,51.592],[-9.567,51.602],[-9.545,51.61],[-9.592,51.614],[-9.787,51.553],[-9.848,51.549],[-9.805,51.566],[-9.787,51.573],[-9.779,51.583],[-9.769,51.592],[-9.733,51.6],[-9.607,51.642],[-9.596,51.656],[-9.563,51.658],[-9.524,51.671],[-9.488,51.676],[-9.459,51.685],[-9.455,51.7],[-9.448,51.712],[-9.455,51.725],[-9.473,51.718],[-9.491,51.715],[-9.513,51.725],[-9.527,51.73],[-9.524,51.744],[-9.542,51.755],[-9.56,51.762],[-9.556,51.749],[-9.556,51.73],[-9.545,51.72],[-9.567,51.717],[-9.578,51.71],[-9.607,51.693],[-9.628,51.685],[-9.646,51.681],[-9.715,51.676],[-9.747,51.668],[-9.873,51.656],[-9.916,51.644],[-9.931,51.637],[-9.938,51.624],[-10.006,51.609],[-10.028,51.597],[-10.06,51.603],[-10.118,51.6],[-10.14,51.593],[-10.158,51.583],[-10.154,51.6],[-10.143,51.614],[-10.075,51.625],[-10.06,51.63],[-10.064,51.649],[-10.086,51.659],[-10.1,51.659],[-10.089,51.671],[-10.068,51.674],[-10.024,51.673],[-10.003,51.678],[-9.956,51.706],[-9.999,51.713],[-9.981,51.732],[-9.949,51.747],[-9.916,51.757],[-9.887,51.762],[-9.898,51.747],[-9.884,51.744],[-9.869,51.749],[-9.855,51.759],[-9.855,51.776],[-9.841,51.769],[-9.823,51.767],[-9.787,51.769],[-9.812,51.782],[-9.801,51.794],[-9.776,51.813],[-9.754,51.82],[-9.743,51.833],[-9.729,51.838],[-9.704,51.837],[-9.671,51.843],[-9.614,51.864],[-9.581,51.87],[-9.653,51.872],[-9.758,51.847],[-9.776,51.84],[-9.787,51.833],[-9.826,51.826],[-9.841,51.823],[-9.862,51.804],[-9.869,51.818],[-9.884,51.823],[-9.895,51.815],[-9.913,51.808],[-9.938,51.804],[-9.992,51.781],[-10.017,51.774],[-10.039,51.782],[-10.06,51.769],[-10.086,51.755],[-10.111,51.745],[-10.136,51.742],[-10.129,51.754],[-10.226,51.782],[-10.186,51.789],[-10.176,51.813],[-10.194,51.84],[-10.233,51.852],[-10.248,51.845],[-10.273,51.821],[-10.294,51.813],[-10.327,51.794],[-10.341,51.788],[-10.348,51.801],[-10.334,51.83],[-10.341,51.843],[-10.356,51.845],[-10.377,51.845],[-10.381,51.857],[-10.388,51.869],[-10.395,51.884],[-10.363,51.887],[-10.28,51.906],[-10.262,51.906],[-10.251,51.916],[-10.269,51.931],[-10.276,51.941],[-10.287,51.951],[-10.305,51.953],[-10.294,51.965],[-10.269,51.97],[-10.266,51.988],[-10.244,51.995],[-10.219,51.999],[-10.194,52.01],[-10.129,52.029],[-10.032,52.041],[-9.992,52.056],[-9.97,52.09],[-9.963,52.071],[-9.941,52.063],[-9.927,52.063],[-9.909,52.13],[-9.877,52.12],[-9.848,52.118],[-9.772,52.125],[-9.787,52.135],[-9.758,52.152],[-9.956,52.146],[-9.945,52.125],[-9.949,52.113],[-9.959,52.125],[-9.97,52.132],[-9.985,52.135],[-9.999,52.139],[-10.028,52.14],[-10.161,52.118],[-10.186,52.11],[-10.208,52.125],[-10.23,52.129],[-10.24,52.12],[-10.269,52.135],[-10.305,52.13],[-10.287,52.124],[-10.273,52.118],[-10.298,52.115],[-10.345,52.125],[-10.37,52.125],[-10.363,52.115],[-10.377,52.112],[-10.417,52.1],[-10.438,52.098],[-10.46,52.103],[-10.467,52.115],[-10.471,52.132],[-10.478,52.152],[-10.453,52.166],[-10.46,52.179],[-10.449,52.189],[-10.428,52.196],[-10.41,52.2],[-10.417,52.186],[-10.395,52.174],[-10.381,52.173],[-10.37,52.184],[-10.374,52.198],[-10.363,52.206],[-10.377,52.213],[-10.366,52.228],[-10.341,52.232],[-10.32,52.235],[-10.309,52.242],[-10.287,52.264],[-10.172,52.287],[-10.158,52.279],[-10.168,52.24],[-10.1,52.24],[-10.071,52.252],[-10.046,52.269],[-10.035,52.291],[-10.06,52.309],[-10.024,52.309],[-10.017,52.296],[-10.014,52.282],[-10.014,52.265],[-10.01,52.254],[-9.995,52.249],[-9.977,52.247],[-9.949,52.238],[-9.913,52.233],[-9.873,52.233],[-9.859,52.238],[-9.837,52.254],[-9.812,52.255],[-9.826,52.249],[-9.808,52.242],[-9.736,52.249],[-9.754,52.259],[-9.769,52.26],[-9.797,52.262],[-9.833,52.272],[-9.848,52.276],[-9.862,52.269],[-9.877,52.279],[-9.88,52.296],[-9.869,52.289],[-9.848,52.284],[-9.833,52.289],[-9.848,52.294],[-9.862,52.296],[-9.851,52.304],[-9.826,52.309],[-9.837,52.326],[-9.833,52.375],[-9.851,52.385],[-9.905,52.392],[-9.931,52.4],[-9.949,52.412],[-9.934,52.421],[-9.916,52.426],[-9.848,52.429],[-9.751,52.456],[-9.736,52.463],[-9.722,52.476],[-9.704,52.483],[-9.679,52.483],[-9.65,52.478],[-9.635,52.473],[-9.639,52.487],[-9.65,52.493],[-9.668,52.495],[-9.682,52.495],[-9.675,52.505],[-9.682,52.515],[-9.675,52.529],[-9.675,52.546],[-9.65,52.571],[-9.635,52.569],[-9.617,52.578],[-9.578,52.571],[-9.499,52.571],[-9.481,52.564],[-9.459,52.566],[-9.448,52.576],[-9.362,52.576],[-9.337,52.578],[-9.272,52.578],[-9.236,52.581],[-9.221,52.586],[-9.207,52.595],[-9.193,52.6],[-9.07,52.623],[-9.052,52.632],[-9.045,52.62],[-9.027,52.618],[-9.005,52.62],[-8.991,52.625],[-8.98,52.64],[-8.969,52.649],[-8.786,52.666],[-8.75,52.672],[-8.768,52.672],[-8.833,52.689],[-8.869,52.693],[-8.933,52.688],[-8.951,52.689],[-8.962,52.699],[-8.948,52.706],[-8.955,52.723],[-8.951,52.735],[-8.969,52.748],[-8.951,52.77],[-8.969,52.77],[-9.002,52.76],[-9.023,52.747],[-9.027,52.735],[-9.059,52.696],[-9.146,52.623],[-9.167,52.618],[-9.254,52.612],[-9.275,52.595],[-9.297,52.59],[-9.311,52.591],[-9.333,52.598],[-9.319,52.606],[-9.293,52.615],[-9.279,52.625],[-9.279,52.639],[-9.311,52.627],[-9.383,52.613],[-9.434,52.612],[-9.455,52.615],[-9.477,52.62],[-9.491,52.634],[-9.524,52.637],[-9.538,52.645],[-9.535,52.661],[-9.545,52.667],[-9.581,52.666],[-9.571,52.657],[-9.556,52.647],[-9.628,52.618],[-9.671,52.612],[-9.693,52.605],[-9.704,52.595],[-9.707,52.579],[-9.722,52.583],[-9.758,52.573],[-9.938,52.558],[-9.92,52.568],[-9.877,52.586],[-9.823,52.595],[-9.621,52.715],[-9.628,52.728],[-9.603,52.738],[-9.581,52.743],[-9.549,52.742],[-9.52,52.747],[-9.499,52.752],[-9.491,52.774],[-9.488,52.787],[-9.491,52.802],[-9.47,52.812],[-9.459,52.821],[-9.452,52.831],[-9.441,52.848],[-9.43,52.858],[-9.427,52.878],[-9.365,52.914],[-9.355,52.934],[-9.373,52.937],[-9.452,52.934],[-9.477,52.941],[-9.448,52.958],[-9.437,52.966],[-9.409,52.997],[-9.398,53.003],[-9.394,53.015],[-9.34,53.078],[-9.319,53.091],[-9.304,53.108],[-9.29,53.13],[-9.272,53.147],[-9.25,53.152],[-9.229,53.143],[-9.182,53.116],[-9.16,53.111],[-9.139,53.115],[-9.121,53.123],[-9.095,53.127],[-9.074,53.118],[-9.07,53.135],[-9.085,53.143],[-9.128,53.152],[-9.07,53.165],[-9.052,53.162],[-9.023,53.147],[-9.005,53.145],[-9.045,53.165],[-9.023,53.167],[-9.009,53.165],[-8.998,53.174],[-8.98,53.176],[-8.973,53.159],[-8.962,53.152],[-8.937,53.145],[-8.944,53.165],[-8.955,53.181],[-8.944,53.196],[-8.93,53.206],[-8.894,53.221],[-8.923,53.216],[-9.031,53.216],[-9.045,53.221],[-9.027,53.228],[-8.984,53.235],[-8.962,53.235],[-8.991,53.241],[-8.98,53.253],[-8.955,53.258],[-8.944,53.268],[-9.023,53.275],[-9.041,53.273],[-9.077,53.263],[-9.401,53.248],[-9.434,53.238],[-9.448,53.231],[-9.47,53.228],[-9.513,53.228],[-9.535,53.235],[-9.545,53.243],[-9.553,53.253],[-9.567,53.262],[-9.545,53.279],[-9.556,53.29],[-9.571,53.29],[-9.581,53.272],[-9.585,53.25],[-9.596,53.238],[-9.614,53.236],[-9.628,53.248],[-9.61,53.277],[-9.617,53.321],[-9.596,53.331],[-9.585,53.324],[-9.567,53.336],[-9.599,53.365],[-9.589,53.373],[-9.553,53.385],[-9.589,53.387],[-9.607,53.385],[-9.621,53.378],[-9.61,53.366],[-9.607,53.349],[-9.614,53.334],[-9.635,53.331],[-9.653,53.341],[-9.646,53.36],[-9.639,53.378],[-9.65,53.392],[-9.671,53.378],[-9.686,53.375],[-9.704,53.351],[-9.729,53.326],[-9.743,53.314],[-9.79,53.302],[-9.808,53.302],[-9.823,53.314],[-9.844,53.324],[-9.887,53.317],[-9.902,53.324],[-9.891,53.341],[-9.887,53.36],[-9.873,53.365],[-9.859,53.365],[-9.841,53.368],[-9.801,53.385],[-9.787,53.393],[-9.819,53.398],[-9.797,53.412],[-9.815,53.419],[-9.848,53.407],[-9.859,53.395],[-9.877,53.395],[-9.88,53.407],[-9.855,53.424],[-9.848,53.434],[-9.869,53.427],[-9.884,53.419],[-9.902,53.425],[-9.923,53.419],[-9.923,53.398],[-9.934,53.385],[-9.963,53.38],[-10.003,53.38],[-10.024,53.385],[-10.035,53.393],[-10.05,53.41],[-10.064,53.412],[-10.104,53.409],[-10.129,53.41],[-10.143,53.419],[-10.158,53.414],[-10.176,53.412],[-10.168,53.429],[-10.158,53.439],[-10.143,53.446],[-10.122,53.447],[-10.082,53.442],[-10.068,53.444],[-10.053,53.454],[-10.064,53.463],[-10.082,53.473],[-10.064,53.479],[-10.042,53.473],[-10.021,53.471],[-10.014,53.481],[-10.032,53.479],[-10.071,53.485],[-10.107,53.495],[-10.129,53.508],[-10.136,53.527],[-10.143,53.539],[-10.183,53.539],[-10.204,53.544],[-10.179,53.555],[-10.158,53.555],[-10.132,53.55],[-10.107,53.55],[-10.114,53.566],[-10.071,53.571],[-10.024,53.562],[-10.006,53.544],[-9.981,53.559],[-10.032,53.588],[-10.046,53.599],[-10.01,53.604],[-9.931,53.599],[-9.902,53.604],[-9.869,53.618],[-9.855,53.618],[-9.823,53.606],[-9.776,53.601],[-9.697,53.598],[-9.715,53.61],[-9.783,53.606],[-9.826,53.616],[-9.909,53.647],[-9.923,53.691],[-9.916,53.713],[-9.905,53.728],[-9.898,53.745],[-9.909,53.761],[-9.862,53.77],[-9.833,53.777],[-9.812,53.778],[-9.79,53.787],[-9.761,53.78],[-9.567,53.797],[-9.581,53.805],[-9.621,53.817],[-9.607,53.824],[-9.607,53.839],[-9.596,53.848],[-9.56,53.864],[-9.589,53.871],[-9.574,53.883],[-9.567,53.9],[-9.581,53.897],[-9.614,53.898],[-9.758,53.9],[-9.855,53.866],[-9.909,53.859],[-9.945,53.88],[-9.931,53.885],[-9.923,53.913],[-9.909,53.92],[-9.913,53.934],[-9.909,53.947],[-9.869,53.961],[-9.837,53.949],[-9.823,53.947],[-9.808,53.919],[-9.787,53.917],[-9.79,53.935],[-9.787,53.947],[-9.805,53.961],[-9.826,53.967],[-9.819,53.954],[-9.837,53.964],[-9.851,53.988],[-9.855,54.003],[-9.877,54.001],[-9.884,54.011],[-9.898,54.025],[-9.902,54.04],[-9.898,54.055],[-9.873,54.062],[-9.862,54.07],[-9.877,54.076],[-9.866,54.087],[-9.833,54.113],[-9.855,54.118],[-9.88,54.113],[-9.884,54.099],[-9.895,54.091],[-9.916,54.07],[-9.945,54.065],[-9.97,54.079],[-9.992,54.104],[-9.97,54.104],[-9.927,54.113],[-9.909,54.118],[-9.938,54.131],[-9.952,54.141],[-9.956,54.153],[-9.938,54.148],[-9.977,54.18],[-9.963,54.175],[-9.941,54.179],[-9.988,54.212],[-10.01,54.219],[-10.024,54.207],[-10.01,54.197],[-10.035,54.185],[-10.053,54.187],[-10.042,54.177],[-10.053,54.168],[-10.068,54.167],[-10.086,54.16],[-10.075,54.15],[-10.068,54.125],[-10.096,54.118],[-10.082,54.113],[-10.068,54.104],[-10.086,54.091],[-10.104,54.092],[-10.118,54.096],[-10.125,54.106],[-10.129,54.125],[-10.122,54.136],[-10.1,54.165],[-10.096,54.177],[-10.093,54.195],[-10.082,54.204],[-10.06,54.222],[-10.093,54.222],[-10.114,54.234],[-10.096,54.236],[-10.086,54.244],[-10.082,54.258],[-10.075,54.27],[-10.017,54.29],[-10.006,54.304],[-9.992,54.3],[-9.988,54.288],[-9.97,54.276],[-9.956,54.271],[-9.938,54.271],[-9.923,54.276],[-9.905,54.265],[-9.887,54.27],[-9.902,54.238],[-9.927,54.228],[-9.952,54.229],[-9.977,54.243],[-9.985,54.222],[-9.967,54.217],[-9.945,54.216],[-9.927,54.211],[-9.909,54.204],[-9.895,54.212],[-9.884,54.222],[-9.869,54.228],[-9.88,54.241],[-9.877,54.256],[-9.859,54.27],[-9.844,54.276],[-9.823,54.273],[-9.787,54.258],[-9.765,54.256],[-9.779,54.27],[-9.797,54.276],[-9.79,54.287],[-9.758,54.283],[-9.776,54.29],[-9.83,54.297],[-9.841,54.307],[-9.844,54.322],[-9.787,54.337],[-9.765,54.336],[-9.725,54.32],[-9.707,54.317],[-9.535,54.31],[-9.506,54.317],[-9.484,54.315],[-9.473,54.307],[-9.383,54.297],[-9.362,54.304],[-9.344,54.314],[-9.322,54.317],[-9.275,54.305],[-9.261,54.3],[-9.254,54.282],[-9.229,54.278],[-9.211,54.275],[-9.211,54.26],[-9.218,54.249],[-9.196,54.243],[-9.214,54.228],[-9.16,54.192],[-9.149,54.18],[-9.142,54.165],[-9.142,54.146],[-9.135,54.163],[-9.131,54.179],[-9.128,54.194],[-9.135,54.207],[-9.113,54.214],[-9.092,54.226],[-9.074,54.246],[-9.067,54.273],[-9.052,54.29],[-9.016,54.292],[-8.955,54.283],[-8.941,54.29],[-8.926,54.285],[-8.912,54.278],[-8.894,54.275],[-8.872,54.265],[-8.858,54.263],[-8.807,54.263],[-8.786,54.266],[-8.764,54.276],[-8.739,54.265],[-8.678,54.271],[-8.649,54.263],[-8.642,54.253],[-8.635,54.233],[-8.606,54.226],[-8.595,54.219],[-8.573,54.201],[-8.559,54.207],[-8.545,54.209],[-8.512,54.207],[-8.527,54.219],[-8.545,54.222],[-8.559,54.228],[-8.566,54.239],[-8.588,54.253],[-8.606,54.256],[-8.62,54.256],[-8.613,54.268],[-8.602,54.28],[-8.57,54.276],[-8.552,54.28],[-8.469,54.276],[-8.487,54.288],[-8.505,54.297],[-8.523,54.302],[-8.541,54.304],[-8.563,54.304],[-8.573,54.314],[-8.566,54.324],[-8.53,54.31],[-8.512,54.317],[-8.519,54.327],[-8.541,54.334],[-8.563,54.337],[-8.66,54.337],[-8.667,54.352],[-8.653,54.366],[-8.613,54.376],[-8.498,54.423],[-8.48,54.427],[-8.473,54.439],[-8.469,54.457],[-8.465,54.476],[-8.451,54.461],[-8.444,54.447],[-8.415,54.459],[-8.383,54.469],[-8.3,54.477],[-8.242,54.498],[-8.21,54.503],[-8.242,54.51],[-8.257,54.515],[-8.271,54.523],[-8.217,54.55],[-8.217,54.57],[-8.174,54.594],[-8.174,54.619],[-8.156,54.611],[-8.138,54.606],[-8.127,54.638],[-8.123,54.65],[-8.145,54.643],[-8.167,54.636],[-8.235,54.629],[-8.271,54.613],[-8.293,54.606],[-8.282,54.621],[-8.285,54.636],[-8.303,54.64],[-8.318,54.636],[-8.343,54.616],[-8.368,54.609],[-8.415,54.579],[-8.429,54.572],[-8.458,54.565],[-8.433,54.587],[-8.419,54.596],[-8.397,54.597],[-8.386,54.606],[-8.386,54.619],[-8.401,54.629],[-8.415,54.619],[-8.419,54.641],[-8.433,54.641],[-8.447,54.628],[-8.458,54.609],[-8.473,54.607],[-8.483,54.616],[-8.487,54.631],[-8.501,54.633],[-8.516,54.626],[-8.541,54.626],[-8.563,54.609],[-8.577,54.611],[-8.599,54.619],[-8.674,54.619],[-8.689,54.626],[-8.681,54.636],[-8.775,54.66],[-8.793,54.66],[-8.782,54.67],[-8.789,54.685],[-8.797,54.699],[-8.782,54.702],[-8.768,54.702],[-8.753,54.705],[-8.746,54.726],[-8.732,54.732],[-8.663,54.763],[-8.638,54.768],[-8.537,54.766],[-8.483,54.756],[-8.458,54.756],[-8.527,54.773],[-8.545,54.783],[-8.53,54.788],[-8.483,54.79],[-8.462,54.775],[-8.444,54.763],[-8.426,54.758],[-8.408,54.763],[-8.462,54.793],[-8.498,54.802],[-8.534,54.817],[-8.559,54.819],[-8.548,54.83],[-8.527,54.832],[-8.501,54.847],[-8.473,54.84],[-8.447,54.839],[-8.401,54.844],[-8.347,54.832],[-8.325,54.832],[-8.343,54.84],[-8.365,54.846],[-8.383,54.856],[-8.379,54.873],[-8.368,54.881],[-8.329,54.878],[-8.314,54.879],[-8.325,54.886],[-8.336,54.903],[-8.35,54.908],[-8.368,54.908],[-8.379,54.896],[-8.408,54.888],[-8.433,54.901],[-8.451,54.922],[-8.462,54.94],[-8.451,54.947],[-8.433,54.938],[-8.419,54.935],[-8.404,54.935],[-8.39,54.938],[-8.368,54.949],[-8.397,54.955],[-8.419,54.969],[-8.458,54.996],[-8.447,55.008],[-8.426,55.009],[-8.415,55.003],[-8.404,55.013],[-8.404,55.031],[-8.386,55.033],[-8.354,55.06],[-8.339,55.058],[-8.336,55.035],[-8.321,55.035],[-8.314,55.053],[-8.318,55.087],[-8.321,55.106],[-8.303,55.119],[-8.289,55.149],[-8.278,55.161],[-8.264,55.161],[-8.206,55.146],[-8.188,55.149],[-8.156,55.158],[-8.141,55.161],[-8.149,55.151],[-8.159,55.139],[-8.156,55.124],[-8.145,55.131],[-8.116,55.155],[-8.055,55.177],[-8.033,55.182],[-8.023,55.188],[-8.012,55.205],[-8.001,55.22],[-7.976,55.222],[-7.951,55.21],[-7.958,55.198],[-8.005,55.182],[-7.961,55.187],[-7.951,55.18],[-7.933,55.18],[-7.918,55.185],[-7.897,55.175],[-7.9,55.156],[-7.875,55.165],[-7.861,55.168],[-7.871,55.151],[-7.897,55.146],[-7.875,55.141],[-7.857,55.139],[-7.846,55.146],[-7.835,55.165],[-7.839,55.177],[-7.861,55.195],[-7.868,55.215],[-7.85,55.227],[-7.825,55.239],[-7.799,55.256],[-7.814,55.202],[-7.81,55.188],[-7.799,55.182],[-7.781,55.187],[-7.756,55.185],[-7.738,55.177],[-7.717,55.166],[-7.706,55.153],[-7.699,55.141],[-7.695,55.126],[-7.702,55.109],[-7.677,55.134],[-7.67,55.148],[-7.673,55.163],[-7.684,55.178],[-7.691,55.195],[-7.695,55.207],[-7.702,55.219],[-7.717,55.222],[-7.72,55.2],[-7.717,55.185],[-7.709,55.175],[-7.724,55.177],[-7.742,55.188],[-7.778,55.2],[-7.792,55.205],[-7.789,55.219],[-7.76,55.251],[-7.724,55.252],[-7.709,55.256],[-7.673,55.274],[-7.645,55.273],[-7.634,55.263],[-7.627,55.252],[-7.612,55.241],[-7.612,55.225],[-7.616,55.21],[-7.616,55.197],[-7.601,55.19],[-7.573,55.182],[-7.565,55.156],[-7.551,55.144],[-7.529,55.133],[-7.526,55.116],[-7.533,55.099],[-7.555,55.09],[-7.569,55.084],[-7.587,55.072],[-7.641,55.05],[-7.58,55.05],[-7.562,55.045],[-7.573,55.023],[-7.583,55.016],[-7.634,54.996],[-7.666,54.969],[-7.681,54.962],[-7.663,54.959],[-7.645,54.965],[-7.547,55.018],[-7.529,55.031],[-7.508,55.036],[-7.486,55.04],[-7.468,55.043],[-7.457,55.057],[-7.45,55.072],[-7.454,55.087],[-7.472,55.092],[-7.472,55.106],[-7.465,55.119],[-7.465,55.143],[-7.511,55.182],[-7.533,55.192],[-7.544,55.205],[-7.551,55.215],[-7.526,55.237],[-7.515,55.254],[-7.515,55.274],[-7.526,55.29],[-7.508,55.29],[-7.493,55.285],[-7.479,55.285],[-7.465,55.29],[-7.468,55.303],[-7.45,55.295],[-7.429,55.286],[-7.407,55.286],[-7.367,55.31],[-7.346,55.315],[-7.328,55.308],[-7.313,55.29],[-7.331,55.29],[-7.321,55.283],[-7.299,55.276],[-7.277,55.276],[-7.256,55.285],[-7.321,55.313],[-7.349,55.335],[-7.353,55.359],[-7.378,55.367],[-7.393,55.374],[-7.385,55.386],[-7.367,55.384],[-7.331,55.372],[-7.263,55.359],[-7.249,55.357],[-7.209,55.345],[-7.195,55.339],[-7.144,55.293],[-7.13,55.286],[-7.079,55.273],[-7.043,55.269],[-6.997,55.258],[-6.975,55.249],[-6.953,55.254],[-6.939,55.239],[-6.943,55.219],[-6.971,55.209],[-7,55.205],[-7.033,55.197],[-7.065,55.185],[-7.101,55.165],[-7.133,55.156],[-7.159,55.151],[-7.173,55.143],[-7.216,55.109],[-7.231,55.092],[-7.245,55.074]],[[-9.664,53.275],[-9.639,53.252],[-9.657,53.233],[-9.693,53.226],[-9.711,53.238],[-9.715,53.253],[-9.718,53.267],[-9.7,53.28],[-9.686,53.282],[-9.671,53.28]],[[-9.963,53.954],[-9.941,53.961],[-9.923,53.954],[-9.931,53.939],[-9.938,53.924],[-9.941,53.907],[-9.938,53.893],[-9.959,53.881],[-9.977,53.886],[-9.995,53.902],[-10.017,53.913],[-10.032,53.913],[-10.046,53.912],[-10.06,53.924],[-10.057,53.939],[-10.057,53.959],[-10.068,53.967],[-10.086,53.971],[-10.161,53.961],[-10.19,53.964],[-10.24,53.974],[-10.266,53.974],[-10.24,53.983],[-10.219,53.986],[-10.201,53.996],[-10.19,54.016],[-10.172,54.008],[-10.158,54.016],[-10.136,54],[-10.107,54.005],[-10.086,54.016],[-10.064,54.023],[-9.977,54.022],[-9.956,54.016],[-9.938,53.989],[-9.956,53.989],[-9.956,53.973],[-9.963,53.961]],[[-8.527,55.009],[-8.509,55.006],[-8.487,54.992],[-8.483,54.976],[-8.527,54.967],[-8.548,54.969],[-8.566,54.976],[-8.563,54.987],[-8.552,55.001],[-8.545,55.016],[-8.53,55.014]],[[-9.815,51.639],[-9.801,51.637],[-9.812,51.627],[-9.891,51.612],[-9.916,51.619],[-9.902,51.637],[-9.88,51.641],[-9.859,51.642],[-9.823,51.639]],[[-10.312,51.926],[-10.298,51.919],[-10.323,51.904],[-10.363,51.892],[-10.395,51.891],[-10.406,51.884],[-10.428,51.882],[-10.413,51.904],[-10.363,51.926],[-10.334,51.931],[-10.32,51.924]],[[-9.65,53.101],[-9.661,53.091],[-9.779,53.123],[-9.812,53.138],[-9.801,53.147],[-9.776,53.147],[-9.751,53.135],[-9.715,53.138],[-9.697,53.137],[-9.671,53.13],[-9.671,53.116],[-9.65,53.101]],[[-7.249,55.07],[-7.256,55.05],[-7.241,55.05],[-7.195,55.058],[-7.177,55.057],[-7.133,55.043],[-7.101,55.041],[-7.065,55.043],[-7.033,55.065],[-7.018,55.072],[-7.011,55.102],[-6.997,55.119],[-6.986,55.126],[-6.975,55.136],[-6.968,55.18],[-6.964,55.195],[-6.946,55.195],[-6.903,55.178],[-6.885,55.175],[-6.755,55.178],[-6.64,55.209],[-6.572,55.212],[-6.554,55.219],[-6.539,55.231],[-6.521,55.241],[-6.5,55.247],[-6.475,55.249],[-6.439,55.236],[-6.417,55.232],[-6.377,55.246],[-6.352,55.242],[-6.255,55.21],[-6.241,55.209],[-6.219,55.21],[-6.179,55.22],[-6.161,55.222],[-6.122,55.217],[-6.1,55.212],[-6.086,55.202],[-6.046,55.178],[-6.035,55.168],[-6.039,55.112],[-6.046,55.095],[-6.061,55.074],[-6.035,55.063],[-6.017,55.065],[-6.003,55.063],[-5.989,55.06],[-5.974,55.053],[-5.967,55.043],[-5.971,55.026],[-5.989,54.989],[-5.956,54.979],[-5.931,54.971],[-5.906,54.959],[-5.888,54.94],[-5.873,54.918],[-5.863,54.906],[-5.848,54.898],[-5.83,54.884],[-5.819,54.874],[-5.812,54.862],[-5.812,54.849],[-5.801,54.82],[-5.776,54.812],[-5.744,54.805],[-5.722,54.783],[-5.733,54.805],[-5.798,54.844],[-5.783,54.862],[-5.751,54.857],[-5.722,54.84],[-5.701,54.825],[-5.69,54.793],[-5.693,54.764],[-5.708,54.743],[-5.729,54.729],[-5.758,54.721],[-5.819,54.71],[-5.845,54.702],[-5.87,54.687],[-5.891,54.672],[-5.913,54.646],[-5.927,54.633],[-5.909,54.619],[-5.906,54.606],[-5.888,54.609],[-5.87,54.623],[-5.848,54.643],[-5.837,54.65],[-5.805,54.66],[-5.769,54.675],[-5.747,54.68],[-5.733,54.677],[-5.715,54.67],[-5.693,54.668],[-5.575,54.68],[-5.557,54.663],[-5.535,54.658],[-5.531,54.643],[-5.513,54.597],[-5.503,54.584],[-5.485,54.577],[-5.474,54.53],[-5.47,54.516],[-5.438,54.488],[-5.438,54.471],[-5.438,54.455],[-5.459,54.437],[-5.463,54.425],[-5.456,54.408],[-5.459,54.391],[-5.47,54.385],[-5.485,54.378],[-5.474,54.359],[-5.488,54.354],[-5.503,54.339],[-5.517,54.337],[-5.528,54.346],[-5.539,54.359],[-5.546,54.379],[-5.56,54.383],[-5.571,54.391],[-5.578,54.403],[-5.571,54.425],[-5.549,54.442],[-5.542,54.457],[-5.546,54.489],[-5.557,54.511],[-5.575,54.53],[-5.647,54.567],[-5.672,54.577],[-5.701,54.577],[-5.693,54.562],[-5.704,54.543],[-5.715,54.537],[-5.701,54.537],[-5.683,54.526],[-5.636,54.521],[-5.665,54.51],[-5.639,54.496],[-5.643,54.484],[-5.639,54.464],[-5.625,54.461],[-5.632,54.447],[-5.654,54.39],[-5.661,54.379],[-5.697,54.363],[-5.708,54.352],[-5.668,54.361],[-5.621,54.376],[-5.578,54.383],[-5.549,54.366],[-5.542,54.327],[-5.553,54.298],[-5.578,54.276],[-5.614,54.256],[-5.629,54.256],[-5.639,54.234],[-5.657,54.229],[-5.668,54.239],[-5.679,54.246],[-5.737,54.249],[-5.78,54.246],[-5.823,54.238],[-5.841,54.234],[-5.863,54.231],[-5.866,54.219],[-5.866,54.184],[-5.87,54.162],[-5.873,54.14],[-5.884,54.121],[-5.895,54.104],[-5.913,54.091],[-5.953,54.079],[-5.985,54.059],[-6.028,54.04],[-6.079,54.035],[-6.097,54.037],[-6.115,54.043],[-6.093,54.055],[-6.161,54.074],[-6.176,54.074],[-6.187,54.092],[-6.212,54.099],[-6.244,54.099],[-6.262,54.104],[-6.284,54.106],[-6.298,54.104],[-6.313,54.099],[-6.327,54.098],[-6.345,54.109],[-6.367,54.098],[-6.367,54.084],[-6.37,54.067],[-6.403,54.06],[-6.428,54.055],[-6.446,54.062],[-6.478,54.067],[-6.565,54.049],[-6.586,54.054],[-6.601,54.049],[-6.611,54.038],[-6.629,54.042],[-6.658,54.06],[-6.673,54.069],[-6.658,54.092],[-6.665,54.114],[-6.644,54.131],[-6.633,54.15],[-6.64,54.168],[-6.662,54.184],[-6.683,54.194],[-6.705,54.199],[-6.723,54.189],[-6.745,54.184],[-6.766,54.192],[-6.788,54.202],[-6.806,54.216],[-6.824,54.233],[-6.831,54.243],[-6.838,54.261],[-6.881,54.276],[-6.863,54.283],[-6.856,54.293],[-6.86,54.307],[-6.871,54.325],[-6.881,54.342],[-6.899,54.346],[-6.914,54.366],[-6.986,54.403],[-7.018,54.413],[-7.051,54.412],[-7.079,54.395],[-7.126,54.349],[-7.159,54.336],[-7.184,54.337],[-7.195,54.331],[-7.187,54.319],[-7.191,54.307],[-7.205,54.305],[-7.209,54.293],[-7.177,54.283],[-7.18,54.27],[-7.144,54.253],[-7.159,54.241],[-7.155,54.224],[-7.173,54.216],[-7.231,54.207],[-7.249,54.197],[-7.259,54.18],[-7.249,54.172],[-7.267,54.162],[-7.259,54.152],[-7.27,54.133],[-7.281,54.126],[-7.295,54.123],[-7.295,54.146],[-7.292,54.163],[-7.324,54.155],[-7.331,54.143],[-7.31,54.114],[-7.328,54.114],[-7.375,54.123],[-7.389,54.121],[-7.403,54.135],[-7.421,54.135],[-7.414,54.146],[-7.439,54.146],[-7.479,54.128],[-7.501,54.125],[-7.609,54.14],[-7.623,54.153],[-7.634,54.168],[-7.706,54.201],[-7.724,54.202],[-7.781,54.201],[-7.835,54.204],[-7.857,54.211],[-7.868,54.228],[-7.875,54.271],[-7.879,54.287],[-7.897,54.293],[-7.933,54.297],[-7.951,54.3],[-7.969,54.312],[-7.979,54.327],[-8.001,54.358],[-8.03,54.358],[-8.055,54.366],[-8.08,54.379],[-8.123,54.415],[-8.145,54.43],[-8.156,54.439],[-8.159,54.455],[-8.174,54.462],[-8.149,54.469],[-8.098,54.479],[-8.073,54.488],[-8.055,54.498],[-8.044,54.513],[-8.023,54.53],[-8.001,54.543],[-7.925,54.533],[-7.886,54.531],[-7.85,54.542],[-7.749,54.596],[-7.709,54.604],[-7.709,54.624],[-7.738,54.619],[-7.753,54.614],[-7.771,54.618],[-7.799,54.634],[-7.814,54.64],[-7.839,54.631],[-7.853,54.636],[-7.864,54.65],[-7.889,54.655],[-7.907,54.661],[-7.915,54.672],[-7.907,54.687],[-7.929,54.697],[-7.879,54.71],[-7.846,54.731],[-7.832,54.731],[-7.803,54.716],[-7.771,54.705],[-7.738,54.707],[-7.702,54.719],[-7.666,54.739],[-7.648,54.744],[-7.616,54.739],[-7.587,54.744],[-7.565,54.739],[-7.544,54.741],[-7.551,54.754],[-7.551,54.78],[-7.544,54.793],[-7.472,54.846],[-7.454,54.862],[-7.443,54.884],[-7.45,54.92],[-7.447,54.932],[-7.436,54.938],[-7.418,54.943],[-7.407,54.952],[-7.414,54.986],[-7.403,54.992],[-7.378,55.03],[-7.367,55.036],[-7.292,55.046],[-7.274,55.058],[-7.249,55.07]],[[-6.237,55.312],[-6.183,55.307],[-6.172,55.293],[-6.179,55.281],[-6.187,55.269],[-6.187,55.285],[-6.212,55.295],[-6.237,55.296],[-6.262,55.295],[-6.284,55.296],[-6.273,55.303],[-6.248,55.31]]],"border":[[[-7.249,55.07],[-7.267,55.065],[-7.274,55.058],[-7.285,55.052],[-7.292,55.046],[-7.357,55.041],[-7.367,55.036],[-7.378,55.03],[-7.403,55.004],[-7.4,54.994],[-7.411,54.992],[-7.407,54.959],[-7.414,54.945],[-7.436,54.938],[-7.447,54.932],[-7.45,54.92],[-7.443,54.895],[-7.443,54.884],[-7.454,54.862],[-7.472,54.846],[-7.544,54.793],[-7.551,54.78],[-7.551,54.754],[-7.544,54.744],[-7.555,54.739],[-7.565,54.739],[-7.587,54.744],[-7.616,54.739],[-7.648,54.744],[-7.666,54.739],[-7.702,54.719],[-7.738,54.707],[-7.771,54.705],[-7.803,54.716],[-7.832,54.731],[-7.846,54.731],[-7.879,54.71],[-7.929,54.697],[-7.915,54.689],[-7.915,54.672],[-7.907,54.661],[-7.889,54.655],[-7.871,54.653],[-7.853,54.636],[-7.846,54.631],[-7.821,54.638],[-7.799,54.634],[-7.771,54.618],[-7.753,54.614],[-7.738,54.619],[-7.72,54.626],[-7.709,54.624],[-7.709,54.604],[-7.749,54.596],[-7.85,54.542],[-7.886,54.531],[-7.925,54.533],[-8.001,54.543],[-8.023,54.53],[-8.044,54.513],[-8.055,54.498],[-8.062,54.493],[-8.073,54.488],[-8.098,54.479],[-8.149,54.469],[-8.167,54.464],[-8.159,54.455],[-8.159,54.447],[-8.156,54.439],[-8.145,54.43],[-8.123,54.415],[-8.08,54.379],[-8.055,54.366],[-8.03,54.358],[-8.001,54.358],[-7.979,54.327],[-7.969,54.312],[-7.951,54.3],[-7.933,54.297],[-7.897,54.293],[-7.879,54.287],[-7.875,54.271],[-7.868,54.228],[-7.857,54.211],[-7.835,54.204],[-7.781,54.201],[-7.724,54.202],[-7.706,54.201],[-7.634,54.168],[-7.627,54.162],[-7.623,54.153],[-7.619,54.145],[-7.609,54.14],[-7.501,54.125],[-7.479,54.128],[-7.439,54.146],[-7.414,54.146],[-7.425,54.136],[-7.411,54.136],[-7.396,54.126],[-7.389,54.121],[-7.375,54.123],[-7.328,54.114],[-7.317,54.114],[-7.331,54.143],[-7.324,54.155],[-7.295,54.165],[-7.295,54.155],[-7.295,54.146],[-7.295,54.135],[-7.299,54.126],[-7.281,54.126],[-7.27,54.133],[-7.263,54.141],[-7.259,54.152],[-7.267,54.162],[-7.245,54.167],[-7.256,54.177],[-7.256,54.19],[-7.249,54.197],[-7.241,54.202],[-7.231,54.207],[-7.173,54.216],[-7.155,54.224],[-7.159,54.241],[-7.144,54.253],[-7.18,54.27],[-7.177,54.283],[-7.209,54.293],[-7.213,54.304],[-7.198,54.304],[-7.184,54.317],[-7.191,54.324],[-7.191,54.334],[-7.169,54.336],[-7.159,54.336],[-7.126,54.349],[-7.079,54.395],[-7.051,54.412],[-7.018,54.413],[-6.986,54.403],[-6.921,54.373],[-6.914,54.366],[-6.907,54.349],[-6.885,54.346],[-6.871,54.325],[-6.86,54.307],[-6.856,54.293],[-6.863,54.283],[-6.881,54.276],[-6.845,54.266],[-6.838,54.261],[-6.835,54.253],[-6.831,54.243],[-6.824,54.233],[-6.806,54.216],[-6.788,54.202],[-6.766,54.192],[-6.745,54.184],[-6.734,54.184],[-6.723,54.189],[-6.716,54.195],[-6.705,54.199],[-6.694,54.199],[-6.683,54.194],[-6.662,54.184],[-6.647,54.173],[-6.64,54.168],[-6.633,54.15],[-6.644,54.131],[-6.665,54.114],[-6.655,54.103],[-6.658,54.092],[-6.673,54.069],[-6.658,54.06],[-6.629,54.042],[-6.615,54.037],[-6.604,54.045],[-6.593,54.052],[-6.572,54.05],[-6.478,54.067],[-6.449,54.069],[-6.439,54.059],[-6.428,54.055],[-6.403,54.06],[-6.377,54.064],[-6.367,54.076],[-6.367,54.084],[-6.367,54.098],[-6.356,54.111],[-6.345,54.109],[-6.338,54.103],[-6.327,54.098],[-6.313,54.099],[-6.298,54.104],[-6.284,54.106],[-6.269,54.098]]]};
+  const stops = [['Letterkenny',54.95,-7.73,'l'],['Derry',54.99,-7.32,'r'],['Galway',53.27,-9.05,'l'],['Cork',51.90,-8.47,'r']];
+  const mc = document.getElementById('map'), mx = mc.getContext('2d');
+  let progress = 1, started = false;
+  function drawMap(){
+    const r = mc.getBoundingClientRect(), d = devicePixelRatio||1;
+    mc.width = r.width*d; mc.height = r.height*d; mx.setTransform(d,0,0,d,0,0);
+    const w = r.width, h = r.height, pad = Math.min(w,h)*0.07;
+    const k = Math.cos(53.4*Math.PI/180);
+    const minX=-10.48*k, maxX=-5.44*k, minY=51.44, maxY=55.39;
+    const sc = Math.min((w-2*pad)/(maxX-minX),(h-2*pad)/(maxY-minY));
+    const ox = (w-(maxX-minX)*sc)/2, oy = (h-(maxY-minY)*sc)/2;
+    const X = lon => ox+(lon*k-minX)*sc, Y = lat => oy+(maxY-lat)*sc;
+    const ink = css('--night-ink'), soft = css('--night-soft'), acc = css('--foil');
+    // graticule
+    mx.strokeStyle = 'rgba(157,176,181,0.10)'; mx.lineWidth = 1;
+    for(let lat=51; lat<=56; lat+=1){ mx.beginPath(); mx.moveTo(0,Y(lat)); mx.lineTo(w,Y(lat)); mx.stroke(); }
+    for(let lon=-11; lon<=-5; lon+=1){ mx.beginPath(); mx.moveTo(X(lon),0); mx.lineTo(X(lon),h); mx.stroke(); }
+    // land
+    mx.beginPath();
+    IRL.land.forEach(ring=>{ ring.forEach(([lon,lat],i)=> i?mx.lineTo(X(lon),Y(lat)):mx.moveTo(X(lon),Y(lat))); mx.closePath(); });
+    mx.fillStyle = 'rgba(234,240,236,0.08)'; mx.fill();
+    mx.strokeStyle = 'rgba(157,176,181,0.65)'; mx.lineWidth = 1; mx.stroke();
+    // border
+    mx.setLineDash([3,4]); mx.strokeStyle = 'rgba(157,176,181,0.8)';
+    IRL.border.forEach(line=>{ mx.beginPath(); line.forEach(([lon,lat],i)=> i?mx.lineTo(X(lon),Y(lat)):mx.moveTo(X(lon),Y(lat))); mx.stroke(); });
+    mx.setLineDash([]);
+    const P = stops.map(s=>[X(s[2]),Y(s[1])]);
+    // route, drawn up to `progress`
+    const segs = P.length-1, upto = progress*segs;
+    mx.strokeStyle = acc; mx.lineWidth = 2.5; mx.setLineDash([7,5]); mx.beginPath(); mx.moveTo(...P[0]);
+    for(let i=0;i<segs;i++){
+      const f = Math.max(0,Math.min(1,upto-i)); if(!f) break;
+      mx.lineTo(P[i][0]+(P[i+1][0]-P[i][0])*f, P[i][1]+(P[i+1][1]-P[i][1])*f);
+    }
+    mx.stroke(); mx.setLineDash([]);
+    // points + labels
+    const fs = Math.max(14, Math.min(20, w/24));
+    mx.font = `800 ${fs}px "Big Shoulders Display", "Arial Narrow", sans-serif`; mx.textBaseline = 'middle';
+    P.forEach((p,i)=>{
+      const on = upto >= i - 0.001, last = i===P.length-1;
+      mx.fillStyle = on ? (last ? acc : ink) : soft;
+      mx.beginPath(); mx.arc(p[0],p[1], last?6:4.5, 0, Math.PI*2); mx.fill();
+      const left = stops[i][3]==='l'; mx.textAlign = left ? 'right' : 'left';
+      mx.fillStyle = on ? ink : soft;
+      mx.fillText(stops[i][0].toUpperCase(), p[0] + (left?-11:11), p[1]);
+    });
+    // scale bar: 100 km
+    const km = 100/111.32*sc, bx = pad, by = h - pad*0.8;
+    mx.strokeStyle = soft; mx.lineWidth = 1.5; mx.beginPath();
+    mx.moveTo(bx,by-4); mx.lineTo(bx,by); mx.lineTo(bx+km,by); mx.lineTo(bx+km,by-4); mx.stroke();
+    mx.font = '500 10px "IBM Plex Mono", monospace'; mx.fillStyle = soft; mx.textAlign = 'left'; mx.textBaseline = 'bottom';
+    mx.fillText('100 KM', bx, by-6);
+    mx.textAlign = 'right'; mx.fillText('N ↑', w-pad*0.6, pad*0.9);
+  }
+  function run(){ if(progress<1){ progress = Math.min(1,progress+0.012); drawMap(); requestAnimationFrame(run); } }
+  drawMap(); addEventListener('resize', drawMap);
+  if(!reduce && 'IntersectionObserver' in window){
+    new IntersectionObserver(e=>{ if(e[0].isIntersecting && !started){ started = true; progress = 0; run(); } },{threshold:.4}).observe(mc);
+  }
+  if(document.fonts) document.fonts.ready.then(drawMap);
+})();
+</script>
+</body>
+</html>
