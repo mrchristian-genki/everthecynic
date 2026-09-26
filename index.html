@@ -63,6 +63,11 @@ h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.92;letter-spaci
 h2{font-size:clamp(2.6rem,6vw,4.5rem)}
 p{margin:0}
 
+/* fan-page notice */
+.notice{background:var(--mustard);color:#1C1C18;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;line-height:1.5}
+.notice .wrap{padding-block:8px;text-align:center}
+.notice strong{font-weight:500;text-transform:uppercase;letter-spacing:.12em}
+
 /* nav */
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--night) 92%,transparent);backdrop-filter:blur(8px);color:var(--night-ink)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
@@ -320,6 +325,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <style>img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
+<div class="notice" role="note"><div class="wrap"><strong>Unofficial fan page</strong> · Made by his uncle Christian. Not created or endorsed by Ryan Kelly.</div></div>
 <nav>
   <div class="wrap">
     <a class="mark" href="#top"><i aria-hidden="true"><b></b><b></b><b></b></i>R<span>.</span>K</a>
@@ -364,7 +370,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     <div style="display:grid;gap:28px">
       <p class="big">Ryan Kelly has spent fifteen years in digital sports media. He writes about football history and culture for a global audience, and writes longer, more personal essays on his own site.</p>
       <dl class="facts">
-        <div><dt>Now</dt><dd>Senior writer and SEO editor at GOAL</dd></div>
+        <div><dt>Most recently</dt><dd>Senior writer and SEO editor at GOAL</dd></div>
         <div><dt>Before</dt><dd>Chief editor of GOAL's Ireland desk</dd></div>
         <div><dt>Specialities</dt><dd>Football history, the culture around the game, tournament coverage, and FIFA eligibility rules</dd></div>
         <div><dt>Essays</dt><dd>Philosophy, politics, literature, memory and loss, from Cicero to John Hume</dd></div>
@@ -575,7 +581,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     </div>
   </div>
 </section>
-<footer><div class="wrap"><span>Ryan Kelly · Writer &amp; editor</span><span>Letterkenny · Derry · Galway · Cork</span></div></footer>
+<footer><div class="wrap"><span>An unofficial fan page by his uncle Christian</span><span>Letterkenny · Derry · Galway · Cork</span></div></footer>
 
 <script>
 (function(){
