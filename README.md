@@ -41,6 +41,6 @@ python3 -m http.server 8000
 ## Before launch
 
 - [ ] Someone who knows Ryan confirms the AI-drawn faces in the Malin Head and glen scenes look like him
-- [ ] Confirm his current title at GOAL ("Senior writer and SEO editor")
+- [x] Career details now follow his LinkedIn profile (roles, dates, outlets, recommendations)
 - [ ] Ryan is happy with the Paddy essay being featured and the wedding coasters being shown
 - [ ] Remove the `<meta name="robots" content="noindex, nofollow">` line in `index.html` so search engines can list the site

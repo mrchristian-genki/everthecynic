@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ryan Kelly · Writer &amp; Editor</title>
-<meta name="description" content="Ryan Kelly is an Irish sports writer and editor from Donegal, based in Cork. Fifteen years in football media, from the GOAL Ireland desk to the Irish Times, and essays at Nothing is written.">
+<meta name="description" content="Ryan Kelly is a writer and editor in Cork. Fourteen years at GOAL, from Chief Editor of Goal Ireland to Senior Content Editor, with freelance bylines in the Irish Times, Irish Independent and Irish Examiner.">
 <!-- Testing: keep search engines out until the family signs off. Delete this line at launch. -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#272B1F">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.everthecynic.com/">
 <meta property="og:title" content="Ryan Kelly · Writer &amp; Editor">
-<meta property="og:description" content="Ryan Kelly is an Irish sports writer and editor from Donegal, based in Cork. Fifteen years in football media, from the GOAL Ireland desk to the Irish Times, and essays at Nothing is written.">
+<meta property="og:description" content="Ryan Kelly is a writer and editor in Cork. Fourteen years at GOAL, from Chief Editor of Goal Ireland to Senior Content Editor, with freelance bylines in the Irish Times, Irish Independent and Irish Examiner.">
 <meta property="og:image" content="https://www.everthecynic.com/img/scene7-glen.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -161,6 +161,7 @@ a.pub:hover{background:var(--ground-2)}
 .pub h3{font-size:2rem}
 .pub p{font-size:1rem;color:var(--ink-soft)}
 .pub .go{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.pub.wide{grid-column:span 2}
 .pub.feature{grid-column:span 2;background:var(--night);color:var(--night-ink)}
 a.pub.feature:hover{background:color-mix(in srgb,var(--night) 80%,var(--olive))}
 .pub.feature .go{color:var(--foil)}
@@ -280,6 +281,16 @@ a.pick:hover h3{text-decoration:underline;text-decoration-color:var(--accent);te
 .chapter .text p{color:var(--night-soft)}
 @media (max-width:760px){.chapter .wrap{grid-template-columns:1fr}.chapter .frame{max-height:70vh}}
 
+/* recommendations */
+.recs{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(20px,3vw,40px)}
+.rec{margin:0;display:grid;gap:16px;align-content:space-between;padding-top:22px;border-top:1px solid var(--line)}
+.rec blockquote{margin:0;font-family:var(--body);font-style:italic;font-size:clamp(1.15rem,1.9vw,1.4rem);line-height:1.4}
+.rec blockquote::before{content:"“";display:block;font-family:var(--display);font-style:normal;font-weight:900;font-size:3rem;line-height:.6;color:var(--mustard);margin-bottom:6px}
+.rec figcaption{display:grid;gap:4px}
+.rec figcaption b{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.25rem;letter-spacing:.02em}
+.rec figcaption span{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);line-height:1.5}
+@media (max-width:760px){.recs{grid-template-columns:1fr}}
+
 /* photo strip */
 .photos{background:var(--night);color:var(--night-ink);padding-block:clamp(56px,8vw,96px)}
 .photos .head p{color:var(--night-soft)}
@@ -319,7 +330,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   .quotes{grid-template-columns:1fr}
   nav ul li:nth-child(n+3){display:none}
   .grid{grid-template-columns:1fr}
-  .pub.feature{grid-column:auto}
+  .pub.feature,.pub.wide{grid-column:auto}
 }
 </style>
 <style>img{max-width:100%}[hidden]{display:none!important}</style>
@@ -333,6 +344,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <li><a href="#about">About</a></li>
       <li><a href="#writing">Writing</a></li>
       <li><a href="#bylines">Bylines</a></li>
+      <li><a href="#words">Praise</a></li>
       <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
     </ul>
@@ -345,19 +357,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   </div>
   <span class="ribbon" aria-hidden="true"></span>
   <div class="wrap hero-copy">
-    <p class="label">Ryan Kelly · Sports writer &amp; editor · Cork</p>
+    <p class="label">Ryan Kelly · Writer &amp; editor · Cork</p>
     <h1><span class="w">Nothing</span><span class="w">is</span><span class="w">written.</span></h1>
-    <p class="lede">Fifteen years covering football, from the GOAL Ireland desk to the Irish Times. <em>Nothing is decided until the final whistle.</em></p>
+    <p class="lede">Fourteen years at GOAL, from the Goal Ireland desk to its global English-language team. <em>Bylines in the Irish Times, Irish Independent and Irish Examiner.</em></p>
     <p class="where">Dunlewey Old Church and Errigal, Donegal</p>
   </div>
 </header>
 
 <section class="score" aria-label="Career at a glance">
   <div class="wrap">
-    <div class="stat"><b>15</b><span>years in digital sports media</span></div>
+    <div class="stat"><b>14</b><span>years at GOAL</span></div>
     <div class="stat"><b>7</b><span>major tournaments covered</span></div>
-    <div class="stat"><b>4</b><span>European Championships</span></div>
-    <div class="stat"><b>3</b><span>World Cups</span></div>
+    <div class="stat"><b>6</b><span>newspapers and outlets</span></div>
+    <div class="stat"><b>14</b><span>languages of World Cup coverage he delivered in 2014</span></div>
   </div>
 </section>
 
@@ -365,15 +377,16 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
   <div class="wrap about">
     <div class="head" style="margin:0">
       <p class="label">About</p>
-      <h2>Writer, editor, essayist</h2>
+      <h2>Writer and editor</h2>
     </div>
     <div style="display:grid;gap:28px">
-      <p class="big">Ryan Kelly has spent fifteen years in digital sports media. He writes about football history and culture for a global audience, and writes longer, more personal essays on his own site.</p>
+      <p class="big">An experienced writer and editor. Most recently at GOAL, he specialised in high-impact SEO content, audience development and affiliate marketing.</p>
       <dl class="facts">
-        <div><dt>Most recently</dt><dd>Senior writer and SEO editor at GOAL</dd></div>
-        <div><dt>Before</dt><dd>Chief editor of GOAL's Ireland desk</dd></div>
-        <div><dt>Specialities</dt><dd>Football history, the culture around the game, tournament coverage, and FIFA eligibility rules</dd></div>
-        <div><dt>Essays</dt><dd>Philosophy, politics, literature, memory and loss, from Cicero to John Hume</dd></div>
+        <div><dt>2017–2026</dt><dd>Senior Content Editor, SEO and affiliate marketing, on GOAL's English-language team</dd></div>
+        <div><dt>2015–2017</dt><dd>Chief Editor, Goal Ireland: League of Ireland, both international sides and Irish players abroad</dd></div>
+        <div><dt>2012–2015</dt><dd>Deputy Editor, Goal Ireland</dd></div>
+        <div><dt>Since 2012</dt><dd>Freelance writer and editor for newspapers and online outlets</dd></div>
+        <div><dt>Strengths</dt><dd>Writing, copy editing, SEO, audience development and affiliate strategy</dd></div>
       </dl>
     </div>
   </div>
@@ -391,7 +404,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <ol class="stops">
         <li><span class="n">1</span><div><h3>Letterkenny</h3><span class="coord">54.95° N · 7.73° W</span><p>Where it started. His mother's town, in the green and gold of Donegal.</p></div></li>
         <li><span class="n">2</span><div><h3>Derry</h3><span class="coord">54.99° N · 7.32° W</span><p>Educated at St Columb's College, the school of Heaney and Hume.</p></div></li>
-        <li><span class="n">3</span><div><h3>Galway</h3><span class="coord">53.27° N · 9.05° W</span><p>University years at the National University of Ireland, Galway, where he met his wife.</p></div></li>
+        <li><span class="n">3</span><div><h3>Galway</h3><span class="coord">53.27° N · 9.05° W</span><p>A BA in English Literature and Classics, then an MA in Classics, with a President's Award along the way. His thesis, <em>The Katabasis of Kubrick</em>, traced classical themes in Kubrick's films. He played for the university soccer team, and met his wife here.</p></div></li>
         <li><span class="n">4</span><div><h3>Cork</h3><span class="coord">51.90° N · 8.47° W</span><p>Home now, and the base for his writing and editing.</p></div></li>
       </ol>
     </div>
@@ -416,19 +429,40 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     <div class="head">
       <p class="label">Bylines</p>
       <h2>Where the work runs</h2>
-      <p>Reporter, copywriter, features writer and editor. He ran GOAL's Ireland desk as chief editor before joining its central English-language editorial team.</p>
+      <p>Deputy editor, then chief editor of Goal Ireland, then senior content editor on GOAL's English-language team. Freelance for Ireland's national and regional papers since 2012.</p>
     </div>
     <div class="grid">
       <a class="pub feature" href="https://www.goal.com/en-us/author/ryan-kelly/8/blt61166f20b49a6477" target="_blank" rel="noopener">
-        <span class="label" style="color:var(--night-soft)">Chief editor, Ireland desk</span>
+        <span class="label" style="color:var(--night-soft)">2012–2026 · Deputy, Chief and Senior Content Editor</span>
         <h3>GOAL</h3>
-        <p>Seven major tournaments covered: four European Championships and three World Cups, plus the biggest nights in Irish football.</p>
+        <p>Fourteen years and seven major tournaments. In 2014 he coordinated GOAL's live World Cup package for MSN: every match, in 14 languages, across 18 territories.</p>
         <span class="go">Read his GOAL articles →</span>
       </a>
       <div class="pub"><span class="label">National</span><h3>The Irish Times</h3><p>Football coverage and features.</p></div>
       <div class="pub"><span class="label">National</span><h3>Irish Independent</h3><p>Reporting on Irish football's big moments.</p></div>
+      <div class="pub"><span class="label">National</span><h3>Irish Examiner</h3><p>Freelance contributions.</p></div>
       <div class="pub"><span class="label">Cork</span><h3>The Echo</h3><p>Formerly the Evening Echo, Cork's own paper.</p></div>
-      <a class="pub" href="https://nothingiswritten.blog" target="_blank" rel="noopener"><span class="label">Personal</span><h3>Nothing is written</h3><p>His own blog, on sport and everything around it.</p><span class="go">Visit the blog →</span></a>
+      <div class="pub"><span class="label">West Cork</span><h3>The Southern Star</h3><p>Freelance contributions.</p></div>
+      <a class="pub wide" href="https://nothingiswritten.blog" target="_blank" rel="noopener"><span class="label">Personal</span><h3>Nothing is written</h3><p>His own blog, on sport and everything around it.</p><span class="go">Visit the blog →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="words">
+  <div class="wrap">
+    <div class="head">
+      <p class="label">From his LinkedIn recommendations</p>
+      <h2>In their words</h2>
+    </div>
+    <div class="recs">
+      <figure class="rec"><blockquote>Ryan is an excellent journalist with outstanding knowledge of sport, search engine optimisation, and how to turn information into interesting copy.</blockquote>
+        <figcaption><b>Miles Chambers</b><span>Head of Content Strategy, Footballco · managed Ryan</span></figcaption></figure>
+      <figure class="rec"><blockquote>Ryan has been absolutely crucial to GOAL's audience growth and affiliate success. He would be a major asset for any newsroom or affiliate team.</blockquote>
+        <figcaption><b>Stefan Coerts</b><span>Executive Editor in Chief, Footballco</span></figcaption></figure>
+      <figure class="rec"><blockquote>He had a sharp eye for commercial opportunity and the editorial discipline to act on it. … A hard worker, a clear thinker, and someone who made the broader team better.</blockquote>
+        <figcaption><b>Jamie Jones</b><span>Head of Content &amp; Audience · led affiliate at Footballco</span></figcaption></figure>
+      <figure class="rec"><blockquote>He co-ordinated the smooth delivery of live coverage of every single World Cup match in 14 languages across 18 different territories.</blockquote>
+        <figcaption><b>James R Marley</b><span>Former FIFA+ Launch Director · managed Ryan at GOAL, 2014</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -471,7 +505,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     <div class="head">
       <p class="label">Influences</p>
       <h2>What goes in, what comes out</h2>
-      <p>The writers and players who shaped how he thinks about the game, and the subjects he writes about in return.</p>
+      <p>Lines from writers and players on the game and on life, and the subjects he writes about in return.</p>
     </div>
   </div>
   <div class="ticker" aria-label="Going in: writers and players">
@@ -573,11 +607,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <section class="block contact" id="contact">
   <video class="bgv" poster="img/glen-empty.jpg" muted loop playsinline preload="metadata" aria-hidden="true"><source src="img/glen-empty.mp4" type="video/mp4"><source src="img/glen-empty.webm" type="video/webm"></video>
   <div class="wrap">
-    <p class="label" style="color:var(--night-soft);margin-bottom:18px">Commissions, features, editing</p>
+    <p class="label" style="color:var(--night-soft);margin-bottom:18px">Writing, editing, SEO and content strategy</p>
     <h2>Get in <span>touch.</span></h2>
     <div class="row">
-      <a class="btn primary" href="https://nothingiswritten.blog/about/" target="_blank" rel="noopener">About Ryan</a>
-      <a class="btn" href="https://muckrack.com/ryan-kelly-4" target="_blank" rel="noopener">Muck Rack profile</a>
+      <a class="btn primary" href="https://www.linkedin.com/in/ryan-kelly-02332943/" target="_blank" rel="noopener">Ryan on LinkedIn</a>
+      <a class="btn" href="https://nothingiswritten.blog/about/" target="_blank" rel="noopener">Nothing is written</a>
+      
     </div>
   </div>
 </section>
